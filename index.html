@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        RAU - Rafart Arquitectura i Urbanisme</title>
+
+    <link rel=”canonical” href=”http://www.rau.com/” />
+
+    <meta name=”description” content="RAU - Rafart Arquitectura i Urbanisme" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="">
+    <header class="header">
+        <img src="assets/logo.png" class="header__logo" alt="logo rau" />
+        <nav class="menu">
+            <a href="/#rau" class="menu__item" title="Rau">Rau</a>
+            <a href="/#projectes" class="menu__item" title="Projectes">Projectes</a>
+            <a href="/#arxiu" class="menu__item" title="Arxiu">Arxiu</a>
+        </nav>
+        <a href="#" id="toggle-nav" class="toggler-nav">
+            <span class="toggler-nav__message">Open Menu</span>
+        </a>
+    </header>
+    <section id="home-logo" class="section">
+        <img src="assets/logo-gran.png" class="home__logo" alt="logo" />
+        <h1 class="title">Rafart arquitectura i urbanisme</span>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="filter">
+            <a href="#" class="filter__item" data-filter=".urbanisme">Urbanisme</a>
+            <a href="#" class="filter__item" data-filter=".equipaments">Equipaments</a>
+            <a href="#" class="filter__item" data-filter=".habitatge">Habitatge</a>
+            <a href="#" class="filter__item" data-filter=".disseny-interiors">Disseny d'interiors</a>
+            <a href="#" class="filter__item" data-filter="*">Tots</a>
+        </div>
+        <div class="grid">
+            <a href="#" class="grid__item urbanisme">
+                <img src="assets/projects/projecte-1.png" class="grid__image" alt="projecte 1" />
+            </a>
+            <a href="#" class="grid__item equipaments">
+                <img src="assets/projects/projecte-2.png" class="grid__image" alt="projecte 2" />
+            </a>
+            <a href="#" class="grid__item urbanisme">
+                <img src="assets/projects/projecte-1.png" class="grid__image" alt="projecte 1" />
+            </a>
+            <a href="#" class="grid__item">
+                <img src="assets/projects/projecte-2.png" class="grid__image" alt="projecte 2" />
+            </a>
+            <a href="#" class="grid__item">
+                <img src="assets/projects/projecte-1.png" class="grid__image" alt="projecte 1" />
+            </a>
+            <a href="#" class="grid__item">
+                <img src="assets/projects/projecte-2.png" class="grid__image" alt="projecte 2" />
+            </a>
+            <a href="#" class="grid__item">
+                <img src="assets/projects/projecte-1.png" class="grid__image" alt="projecte 1" />
+            </a>
+            <a href="#" class="grid__item">
+                <img src="assets/projects/projecte-2.png" class="grid__image" alt="projecte 2" />
+            </a>
+            <a href="#" class="grid__item">
+                <img src="assets/projects/projecte-1.png" class="grid__image" alt="projecte 1" />
+            </a>
+            <a href="#" class="grid__item">
+                <img src="assets/projects/projecte-2.png" class="grid__image" alt="projecte 2" />
+            </a>
+        </div>
+    </section>
+    <section id="arxius" class="section">
+        <div class="item-container">
+            <a href="#" class="item-container__item" title="veure projecte">Casa Armengol - 2018 / Lleida</a>
+            <a href="#" class="item-container__item" title="veure projecte">Casa Feliu - 2017 / Barcelona</a>
+            <a href="#" class="item-container__item" title="veure projecte">Casa Armengol - 2018 / Lleida</a>
+            <a href="#" class="item-container__item" title="veure projecte">Casa Feliu - 2017 / Barcelona</a>
+            <a href="#" class="item-container__item" title="veure projecte">Casa Armengol - 2018 / Lleida</a>
+            <a href="#" class="item-container__item" title="veure projecte">Casa Feliu - 2017 / Barcelona</a>
+            <a href="#" class="item-container__item" title="veure projecte">Casa Armengol - 2018 / Lleida</a>
+            <a href="#" class="item-container__item" title="veure projecte">Casa Feliu - 2017 / Barcelona</a>
+            <a href="#" class="item-container__item" title="veure projecte">Casa Armengol - 2018 / Lleida</a>
+            <a href="#" class="item-container__item" title="veure projecte">Casa Feliu - 2017 / Barcelona</a>
+        </div>
+    </section>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+        const elem = document.querySelector('.grid');
+
+
+        const filterButons = document.querySelectorAll('[data-filter]');
+        filterButons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const filter = button.dataset.filter;
+                console.log({ filter });
+                iso.arrange({ filter });
+            })
+        });
+
+        const menuToggler = document.querySelector('#toggle-nav'); +
+            menuToggler.addEventListener('click', () => {
+                const body = document.querySelector('body');
+                body.classList.toggle('open');
+            })
+    </script>
+</body>
+
+</html>
