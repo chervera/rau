@@ -1,4 +1,4 @@
-:root{
+:root {
     --distance-m: 25px;
     --distance-l: 50px;
     --header-height: 106px;
@@ -7,27 +7,27 @@
 body {
     font-family: 'Work Sans', sans-serif;
     color: #000;
-    padding-top: var(--header-height);
 }
 
-body.open{
+body.open {
     overflow: hidden;
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     padding: var(--distance-m);
     background: #fff;
+    z-index: 9999;
 }
 
-.header__logo{
+.header__logo {
     height: 52px;
 }
 
-.menu{
+.menu {
     background: #fff;
     position: fixed;
     top: 0;
@@ -38,19 +38,33 @@ body.open{
     left: 100%;
     transition: all 500ms;
 }
-.open .menu{
+
+.open .menu {
     left: 0;
     transition: all 500ms;
 }
 
-.menu__item{
+.menu__item {
     font-size: 28px;
     color: #000;
     text-decoration: none;
     display: block;
 }
 
-.toggler-nav{
+.menu__sub-menu {
+    position: absolute;
+    bottom: var(--distance-l);
+}
+
+.menu__sub-menu .menu__item {
+    display: inline-block;
+}
+
+.menu__sub-menu .menu__item+.menu__item::before {
+    content: ' - ';
+}
+
+.toggler-nav {
     position: absolute;
     z-index: 9999;
     top: 35px;
@@ -59,13 +73,12 @@ body.open{
     height: 32px;
     display: block;
 }
-.toggler-nav,
-.toggler-nav:focus,
-.toggler-nav:active{
+
+.toggler-nav, .toggler-nav:focus, .toggler-nav:active {
     outline: none;
 }
 
-.toggler-nav__message, .toggler-nav::before, .toggler-nav::after{
+.toggler-nav__message, .toggler-nav::before, .toggler-nav::after {
     text-indent: -9999px;
     display: block;
     background: #979797;
@@ -75,55 +88,74 @@ body.open{
     width: 100%;
     position: absolute;
     transition: all 500ms;
-
 }
-.toggler-nav__message{
+
+.toggler-nav__message {
     top: 50%;
     margin-top: -3px;
 }
-.toggler-nav::before{
+
+.toggler-nav::before {
     top: 0;
 }
-.toggler-nav::after{
-bottom: 0;
+
+.toggler-nav::after {
+    bottom: 0;
 }
 
-.open .toggler-nav__message{
+.open .toggler-nav__message {
     opacity: 0;
     transition: all 500ms;
-
 }
 
-.open .toggler-nav::before{
+.open .toggler-nav::before {
     transform: rotate(45deg);
     top: 50%;
     margin-top: -3px;
     transition: all 500ms;
-
 }
 
-.open .toggler-nav::after{
+.open .toggler-nav::after {
     transform: rotate(-45deg);
     top: 50%;
     margin-top: -3px;
     transition: all 500ms;
-
 }
 
-.section{
-    padding: var(--distance-m);
+.section {
+    padding: var(--header-height) var(--distance-m);
     min-height: 100vh;
+    display: none;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
-#projects{
-    min-height: 100vh;
+.active-home .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
 }
 
-.home__logo{
+.active-projecte-viewer #projecte-viewer, .active-projectes #projectes, .active-arxius #arxius, .active-rau #rau {
+    display: block;
+    height: auto;
+}
+
+.home__logo {
     width: 180px;
 }
 
-.filter{
+.active-home .header__logo {
+    display: none;
+}
+
+.home__title {
+    display: none;
+}
+
+.filter {
     white-space: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -133,32 +165,33 @@ bottom: 0;
     padding-right: var(--distance-m);
 }
 
-.filter::-webkit-scrollbar{
+.filter::-webkit-scrollbar {
     display: none;
 }
 
-.filter__item{
+.filter__item {
     font-size: 18px;
     color: #000;
     text-decoration: none;
 }
 
-.filter__item + .filter__item::before{
-content: ' - ';
+.filter__item+.filter__item::before {
+    content: ' - ';
 }
 
-.grid__item{
+.grid__item {
     width: 100%;
     margin-bottom: var(--distance-m);
     display: block;
 }
-.grid__image{
+
+.grid__image {
     width: 100%;
     min-width: 100%;
     display: block;
 }
 
-.item-container__item{
+.item-container__item {
     color: #000;
     display: block;
     text-decoration: none;
@@ -167,3 +200,37 @@ content: ' - ';
     font-weight: 600;
 }
 
+.block {
+    margin-bottom: var(--distance-m);
+}
+
+.block.block--featured {
+    padding-top: var(--distance-m);
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.block__title {
+    text-transform: uppercase;
+}
+
+.block__description {
+    margin-top: 0;
+}
+
+.block__element {
+    margin-bottom: var(--distance-m);
+}
+
+.block__property {
+    display: block;
+}
+
+.block__property.block__property--featured {
+    margin-bottom: var(--distance-m);
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+}

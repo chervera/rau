@@ -14,106 +14,115 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="vendor/normalize.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body class="">
+<body class="active-projecte-viewer">
     <header class="header">
         <img src="assets/logo.png" class="header__logo" alt="logo rau" />
         <nav class="menu">
-            <a href="/#rau" class="menu__item" title="Rau">Rau</a>
-            <a href="/#projectes" class="menu__item" title="Projectes">Projectes</a>
-            <a href="/#arxiu" class="menu__item" title="Arxiu">Arxiu</a>
+            <a href="#" class="menu__item navigation" data-navigation="projectes" title="Projectes">Projectes</a>
+            <a href="#" class="menu__item navigation" data-navigation="arxius" title="Arxiu">Arxiu</a>
+            <a href="#" class="menu__item navigation" data-navigation="rau" title="Rau">Rau</a>
+            <div class="menu__sub-menu">
+                <a href="/ca" class="menu__item" title="Català">cat</a>
+                <a href="/es" class="menu__item" title="Español">cast</a>
+                <a href="/en" class="menu__item" title="English">en</a>
+            </div>
         </nav>
         <a href="#" id="toggle-nav" class="toggler-nav">
             <span class="toggler-nav__message">Open Menu</span>
         </a>
     </header>
-    <section id="home-logo" class="section">
+    <section id="home-logo" class="home section">
         <img src="assets/logo-gran.png" class="home__logo" alt="logo" />
-        <h1 class="title">Rafart arquitectura i urbanisme</span>
+        <h1 class="home__title">Rafart arquitectura i urbanisme</span>
     </section>
 
-    <section id="projects" class="section">
-        <div class="filter">
-            <a href="#" class="filter__item" data-filter=".urbanisme">Urbanisme</a>
-            <a href="#" class="filter__item" data-filter=".equipaments">Equipaments</a>
-            <a href="#" class="filter__item" data-filter=".habitatge">Habitatge</a>
-            <a href="#" class="filter__item" data-filter=".disseny-interiors">Disseny d'interiors</a>
-            <a href="#" class="filter__item" data-filter="*">Tots</a>
+    <section id="projectes" class="section">
+        <div id="filters" class="filter template-container">
+            <a href="#" class="filter__item template" data-filter="">Loading</a>
         </div>
-        <div class="grid">
-            <a href="#" class="grid__item urbanisme">
-                <img src="assets/projects/projecte-1.png" class="grid__image" alt="projecte 1" />
-            </a>
-            <a href="#" class="grid__item equipaments">
-                <img src="assets/projects/projecte-2.png" class="grid__image" alt="projecte 2" />
-            </a>
-            <a href="#" class="grid__item urbanisme">
-                <img src="assets/projects/projecte-1.png" class="grid__image" alt="projecte 1" />
-            </a>
-            <a href="#" class="grid__item">
-                <img src="assets/projects/projecte-2.png" class="grid__image" alt="projecte 2" />
-            </a>
-            <a href="#" class="grid__item">
-                <img src="assets/projects/projecte-1.png" class="grid__image" alt="projecte 1" />
-            </a>
-            <a href="#" class="grid__item">
-                <img src="assets/projects/projecte-2.png" class="grid__image" alt="projecte 2" />
-            </a>
-            <a href="#" class="grid__item">
-                <img src="assets/projects/projecte-1.png" class="grid__image" alt="projecte 1" />
-            </a>
-            <a href="#" class="grid__item">
-                <img src="assets/projects/projecte-2.png" class="grid__image" alt="projecte 2" />
-            </a>
-            <a href="#" class="grid__item">
-                <img src="assets/projects/projecte-1.png" class="grid__image" alt="projecte 1" />
-            </a>
-            <a href="#" class="grid__item">
-                <img src="assets/projects/projecte-2.png" class="grid__image" alt="projecte 2" />
+        <div id="projectes-list" class="grid template-container">
+            <a href="#" class="grid__item project-shower template">
+                loading
             </a>
         </div>
+    </section>
+    <section id="projecte-viewer" class="section">
+
     </section>
     <section id="arxius" class="section">
-        <div class="item-container">
-            <a href="#" class="item-container__item" title="veure projecte">Casa Armengol - 2018 / Lleida</a>
-            <a href="#" class="item-container__item" title="veure projecte">Casa Feliu - 2017 / Barcelona</a>
-            <a href="#" class="item-container__item" title="veure projecte">Casa Armengol - 2018 / Lleida</a>
-            <a href="#" class="item-container__item" title="veure projecte">Casa Feliu - 2017 / Barcelona</a>
-            <a href="#" class="item-container__item" title="veure projecte">Casa Armengol - 2018 / Lleida</a>
-            <a href="#" class="item-container__item" title="veure projecte">Casa Feliu - 2017 / Barcelona</a>
-            <a href="#" class="item-container__item" title="veure projecte">Casa Armengol - 2018 / Lleida</a>
-            <a href="#" class="item-container__item" title="veure projecte">Casa Feliu - 2017 / Barcelona</a>
-            <a href="#" class="item-container__item" title="veure projecte">Casa Armengol - 2018 / Lleida</a>
-            <a href="#" class="item-container__item" title="veure projecte">Casa Feliu - 2017 / Barcelona</a>
+        <div class="item-container template-container">
+            <a href="#" class="item-container__item template" title="veure projecte">Loading...</a>
         </div>
     </section>
+    <section id="rau" class="section">
+        <div class="block">
+            <span class="block__title">Filosofia</span>
+            <p class="block__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam felis quis felis imperdiet, quis
+                venenatis nisi varius. Praesent cursus nisi lectus, tincidunt dapibus augue dictum et. Phasellus ut ante
+                hendrerit, tincidunt quam in, interdum sem. Praesent malesuada non tortor sed gravida. Nam hendrerit
+                dignissim nibh, in ultricies libero ullamcorper at. Mauris auctor odio eu sodales laoreet. Nullam purus
+                odio, commodo non lorem eu, vulputate tincidunt odio. Nam vel varius orci, sit amet euismod ante. Orci
+                varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nec elit
+                at diam congue viverra. Quisque dignissim diam non tellus convallis, eu sagittis sapien auctor. Integer
+                tincidunt urna elit, gravida lobortis ipsum vehicula eu. Proin fringilla placerat quam non vestibulum.
+                Suspendisse ornare, mi nec accumsan venenatis, diam justo varius est, in ultrices nulla neque a sapien.
+                Praesent nec suscipit sapien.
+            </p>
+        </div>
+        <div class="block">
+            <span class="block__title">Equip</span>
+            <div class="block__element">
+                <span class="block__property">Persona equip 1</span>
+                <span class="block__property">Arquitecte</span>
+                <span class="block__property">arquitecte1@rau.cat</span>
+            </div>
+            <div class="block__element">
+                <span class="block__property">Persona equip 2</span>
+                <span class="block__property">Arquitecte</span>
+                <span class="block__property">arquitecte2@rau.cat</span>
+            </div>
+            <div class="block__element">
+                <span class="block__property">Persona equip 3</span>
+                <span class="block__property">Arquitecte</span>
+                <span class="block__property">arquitecte3@rau.cat</span>
+            </div>
+            <div class="block__element">
+                <span class="block__property">Persona equip 4</span>
+                <span class="block__property">Arquitecte</span>
+                <span class="block__property">arquitecte4@rau.cat</span>
+            </div>
+        </div>
+        <div class="block block--featured">
+            <span class="block__property block__property--featured">info@rau.cat</span>
+            <span class="block__property block__property--featured">General Brito, 2 25007 Lleida</span>
+            <span class="block__property block__property--featured">(+34) 973 24 44 57</span>
+            <span class="block__property block__property--featured">
+                <a href="#" target="_blank" class="link link--instagram">instagram</a>
+                <a href="#" target="_blank" class="link link--facebook">facebook</a>
+                <a href="#" target="_blank" class="link link--twitter">twitter</a>
+            </span>
+        </div>
+        <span class="block__property block__property--featured">
+            <a href="#" class="link">Politica de cookies</a>
+        </span>
+        <span class="block__property block__property--featured">
+            <a href="#" class="link">Politica de privacitat</a>
+        </span>
+        <span class="block__property block__property--featured">
+            <a href="#" class="link">Avís legal</a>
+        </span>
+    </section>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script>
-        const elem = document.querySelector('.grid');
-
-
-        const filterButons = document.querySelectorAll('[data-filter]');
-        filterButons.forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                const filter = button.dataset.filter;
-                console.log({ filter });
-                iso.arrange({ filter });
-            })
-        });
-
-        const menuToggler = document.querySelector('#toggle-nav'); +
-            menuToggler.addEventListener('click', () => {
-                const body = document.querySelector('body');
-                body.classList.toggle('open');
-            })
-    </script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

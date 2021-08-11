@@ -1,0 +1,61 @@
+[
+    {
+    "id": "casa-armengol",
+    "nom": "Casa Armengol",
+    "any": "2018",
+    "lloc": "Lleida",
+    "imatges": [
+        {
+            "url": "assets/projecte1/projecte-1.png",
+            "alt": "alt del projecte 1"
+        },
+        {
+            "url": "assets/projecte1/projecte-2.png",
+            "alt": "alt del projecte 2"
+        }
+    ],
+    "filtres": [
+        "urbanisme"
+    ]
+},
+{
+    "id": "casa-feliu",
+    "nom": "Casa Feliu",
+    "any": "2017",
+    "lloc": "Barcelona",
+    "imatges": [
+        {
+            "url": "assets/projecte1/projecte-2.png",
+            "alt": "alt del projecte 1"
+        },
+        {
+            "url": "assets/projecte1/projecte-1.png",
+            "alt": "alt del projecte 2"
+        }
+    ],
+    "filtres": [
+        "equipaments",
+        "diseny d'interiors"
+    ]
+},
+{
+    "id": "casa-esther",
+    "nom": "Casa Esther",
+    "any": "2019",
+    "lloc": "Sisteró",
+    "imatges": [
+        {
+            "url": "assets/projecte1/projecte-3.png",
+            "alt": "alt del projecte 1"
+        },
+        {
+            "url": "assets/projecte1/projecte-1.png",
+            "alt": "alt del projecte 2"
+        }
+    ],
+    "filtres": [
+        "equipaments",
+        "urbanisme"
+    ]
+}
+]
