@@ -1,4 +1,5 @@
 :root {
+    --distance-s: 12px;
     --distance-m: 25px;
     --distance-l: 50px;
     --header-height: 106px;
@@ -7,9 +8,10 @@
 body {
     font-family: 'Work Sans', sans-serif;
     color: #000;
+    font-size: 18px;
 }
 
-body.open {
+body.open, body.open-project {
     overflow: hidden;
 }
 
@@ -123,11 +125,33 @@ body.open {
 }
 
 .section {
-    padding: var(--header-height) var(--distance-m);
+    padding: var(--header-height) var(--distance-m) var(--distance-m) var(--distance-m);
     min-height: 100vh;
     display: none;
     height: 100vh;
     box-sizing: border-box;
+}
+
+.section__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.more-info{
+    background: #D8D8D8;
+    padding: var(--distance-m);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: 0;
+    transition: all 500ms;
+    overflow: scroll;
+}
+
+.more-info.open{
+    top: 136px;
+    transition: all 500ms;
 }
 
 .active-home .home {
@@ -141,6 +165,20 @@ body.open {
 .active-projecte-viewer #projecte-viewer, .active-projectes #projectes, .active-arxius #arxius, .active-rau #rau {
     display: block;
     height: auto;
+}
+
+#projecte-viewer{
+    position: fixed;
+    display: block;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    transition: all 500ms;
+}
+#projecte-viewer.open{
+    top: 0;
 }
 
 .home__logo {
@@ -234,3 +272,40 @@ body.open {
     text-decoration: none;
     color: #000;
 }
+
+.projecte-viewer__title{
+    margin-bottom: var(--distance-s);
+    display: block;
+}
+
+.main-carousel{
+    height: 60vh;
+    margin-bottom: var(--distance-s);
+    overflow: hidden;
+}
+.carousel-cell {
+    width: 100%; /* full width */
+    height: 100%;
+    background: #fff;
+    /* center images in cells with flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-cell img{
+      display: block;
+      max-height: 100%;
+      width: 100%;
+  }
+
+  .action-container{
+      display: flex;
+      justify-content: flex-end;
+      margin-top: var(--distance-m);
+  }
+
+  .action-container__link{
+    color: #4DABF7;
+    text-decoration: none;
+  }

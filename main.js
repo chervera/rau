@@ -1,6 +1,98 @@
 let iso;
+let flkty;
+let data;
+
 const filters = {};
-let activeNavigation = "home";
+const SECTION = {
+    HOME: "home",
+    PROJECTES: "projectes",
+    PROJECTE_VIEWER: "projecte-viewer"
+};
+let activeNavigation = SECTION.PROJECTES;
+
+function init() {
+    initFirstSection();
+    initMenuButton();
+    initMenuNavigation();
+    initActions();
+    readTextFile("projectes.json", function (text) {
+        data = JSON.parse(text);
+        initData(data);
+    });
+}
+
+function initActions() {
+    const llegirMes = document.querySelector('#see-more-project');
+    llegirMes.addEventListener('click', function (e) {
+        e.preventDefault();
+        showMoreInfo();
+    });
+
+    const tancarLlegitMes = document.querySelector('#close-see-more-project');
+    tancarLlegitMes.addEventListener('click', function (e) {
+        e.preventDefault();
+        closeMoreInfo();
+    });
+
+    const tancarProjecteViewer = document.querySelector('#close-project-viewer');
+    tancarProjecteViewer.addEventListener('click', function (e) {
+        e.preventDefault();
+        closeMoreInfo();
+        closeProjecteContainer();
+    });
+}
+
+function showMoreInfo() {
+    const moreInfoContainer = document.querySelector('#projecte-mas-info');
+    moreInfoContainer.classList.add('open');
+}
+
+function closeMoreInfo() {
+    const moreInfoContainer = document.querySelector('#projecte-mas-info');
+    moreInfoContainer.classList.remove('open');
+}
+
+function initFirstSection() {
+    document.querySelector('body').classList.add(`active-${activeNavigation}`);
+}
+
+function initMenuNavigation() {
+    document.querySelectorAll(".navigation").forEach(element => {
+        element.addEventListener('click', e => {
+            e.preventDefault();
+            navigateTo(element.dataset.navigation);
+            toggleMenu();
+        });
+    })
+}
+
+function navigateTo(target) {
+    closeMoreInfo();
+    closeProjecteContainer();
+    document.querySelector('body').classList.remove(`active-${activeNavigation}`);
+    document.querySelector('body').classList.add(`active-${target}`);
+    activeNavigation = target;
+    iso.arrange({ filter: "*" });
+    scrollToInit();
+}
+
+function scrollToInit() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0;
+}
+
+function initMenuButton() {
+    const menuToggler = document.querySelector('#toggle-nav');
+    menuToggler.addEventListener('click', (e) => {
+        e.preventDefault();
+        toggleMenu();
+    });
+}
+
+function toggleMenu() {
+    const body = document.querySelector('body');
+    body.classList.toggle('open');
+}
 
 function slugify(text) {
 
@@ -26,41 +118,6 @@ function readTextFile(file, callback) {
         }
     }
     rawFile.send(null);
-}
-
-function init() {
-    initMenuButton();
-    initMenuNavigation();
-    readTextFile("projectes.json", function (text) {
-        const data = JSON.parse(text);
-        initData(data);
-    });
-}
-
-function initMenuNavigation() {
-    document.querySelectorAll(".navigation").forEach(element => {
-        element.addEventListener('click', e => {
-            e.preventDefault();
-            document.querySelector('body').classList.remove(`active-${activeNavigation}`);
-            document.querySelector('body').classList.add(`active-${element.dataset.navigation}`);
-            activeNavigation = element.dataset.navigation;
-            iso.arrange({ filter: "*" });
-            toggleMenu();
-        });
-    })
-}
-
-function initMenuButton() {
-    const menuToggler = document.querySelector('#toggle-nav');
-    menuToggler.addEventListener('click', (e) => {
-        e.preventDefault();
-        toggleMenu();
-    });
-}
-
-function toggleMenu() {
-    const body = document.querySelector('body');
-    body.classList.toggle('open');
 }
 
 function initData(data) {
@@ -90,7 +147,7 @@ function initData(data) {
             gutter: 25
         });
 
-    })
+    });
 
 
     templateArxiu.remove();
@@ -147,6 +204,7 @@ function displayArxiu(element, template, templateContainer) {
     let arxiu = template.cloneNode();
     arxiu.classList.remove("template");
     arxiu.textContent = `${element.nom} - ${element.any} / ${element.lloc}`;
+    arxiu.addEventListener('click', e => showProjecte(e, element.id));
     templateContainer.appendChild(arxiu);
 };
 
@@ -162,14 +220,79 @@ function displayProjecte(element, template, templateContainer) {
         projecte.classList.add(slugify(classe));
         filters[slugify(classe)] = classe;
     });
-    projecte.addEventListener('click', showProjecte);
+    projecte.addEventListener('click', e => showProjecte(e, element.id));
     templateContainer.appendChild(projecte);
 }
 
-function showProjecte(e) {
+function showProjecte(e, id) {
     e.preventDefault();
-    console.log('showProjecte');
+    const project = findProjectById(id);
+
+    initProjecteImages(project);
+
+    title = document.querySelector(".projecte-viewer__title");
+    title.textContent = project.nom;
+
+    title = document.querySelector(".projecte-viewer__subtitle");
+    title.textContent = `${project.lloc} / ${project.any}`;
+
+    //navigateTo(SECTION.PROJECTE_VIEWER);
+
+    showProjecteContainer();
+
 }
+
+function showProjecteContainer() {
+    let container = document.querySelector('#projecte-viewer');
+    container.classList.add('open');
+    let bodyContainer = document.querySelector('body');
+    bodyContainer.classList.add('open-project');
+}
+
+function closeProjecteContainer() {
+    let container = document.querySelector('#projecte-viewer');
+    container.classList.remove('open');
+    let bodyContainer = document.querySelector('body');
+    bodyContainer.classList.remove('open-project');
+}
+
+function initProjecteImages(project) {
+
+    if (flkty) {
+        flkty.destroy();
+    }
+
+    //<div class="carousel-cell">
+    //<img src="assets/projecte1/projecte-1.png" />
+    //</div>
+
+    carouselContainer = document.querySelector('#projecte-carousel');
+    carouselContainer.innerHTML = '';
+    let cell, image;
+    project.imatges.forEach(imatge => {
+        image = document.createElement("img");
+        image.setAttribute('data-flickity-lazyload', imatge.url);
+
+        cell = document.createElement("div");
+        cell.classList.add('carousel-cell');
+        cell.appendChild(image);
+
+        carouselContainer.appendChild(cell);
+    });
+    imagesLoaded(carouselContainer, function () {
+        flkty = new Flickity('#projecte-carousel', {
+            lazyLoad: 1,
+            imagesLoaded: true,
+            pageDots: false,
+            fade: true
+        });
+    });
+}
+
+function findProjectById(id) {
+    return data.find((project) => project.id == id);
+}
+
 function createFilters() {
 
     const templateFilter = document.querySelector("#filters .template");
@@ -204,5 +327,4 @@ function activateFilters() {
     });
 }
 
-
-init();
+window.addEventListener('load', init);

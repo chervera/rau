@@ -16,12 +16,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
     <link rel="stylesheet" href="vendor/normalize.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body class="active-projecte-viewer">
+<body class="">
     <header class="header">
         <img src="assets/logo.png" class="header__logo" alt="logo rau" />
         <nav class="menu">
@@ -54,7 +56,43 @@
         </div>
     </section>
     <section id="projecte-viewer" class="section">
-
+        <div class="section__header">
+            <span class="projecte-viewer__title">Loading</span>
+            <a href="#" id="close-project-viewer" class="link">Tancar</a>
+        </div>
+        <div id="projecte-carousel" class="main-carousel">
+            Loading...
+        </div>
+        <span class="projecte-viewer__subtitle">Loading</span>
+        <div class="action-container">
+            <a href="#" id="see-more-project" class="action-container__link">Llegir més</a>
+        </div>
+    </section>
+    <section id="projecte-mas-info" class="more-info">
+        <div class="action-container">
+            <a href="#" id="close-see-more-project" class="link">Tancar</a>
+        </div>
+        <p class="more-info__block">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam felis quis felis imperdiet, quis
+            venenatis nisi varius. Praesent cursus nisi lectus, tincidunt dapibus augue dictum et. Phasellus ut ante
+            hendrerit, tincidunt quam in, interdum sem. Praesent malesuada non tortor sed gravida. Nam hendrerit
+            dignissim nibh, in ultricies libero ullamcorper at. Mauris auctor odio eu sodales laoreet. Nullam purus
+            odio, commodo non lorem eu, vulputate tincidunt odio. Nam vel varius orci, sit amet euismod ante. Orci
+            varius natoque penatibus
+            hendrerit, tincidunt quam in, interdum sem. Praesent malesuada non tortor sed gravida. Nam hendrerit
+            dignissim nibh, in ultricies libero ullamcorper at. Mauris auctor odio eu sodales laoreet. Nullam purus
+            odio, commodo non lorem eu, vulputate tincidunt odio. Nam vel varius orci, sit amet euismod ante. Orci
+            varius natoque penatibus hendrerit, tincidunt quam in, interdum sem. Praesent malesuada non tortor sed
+            gravida. Nam hendrerit
+            dignissim nibh, in ultricies libero ullamcorper at. Mauris auctor odio eu sodales laoreet. Nullam purus
+            odio, commodo non lorem eu, vulputate tincidunt odio. Nam vel varius orci, sit amet euismod ante. Orci
+            varius natoque penatibus
+        </p>
+        <p class="more-info__block">
+            Localització: Torrefarrera<br />
+            Situació: <br />
+            Adreça: c/Alzinar 19
+        </p>
     </section>
     <section id="arxius" class="section">
         <div class="item-container template-container">
@@ -120,8 +158,11 @@
             <a href="#" class="link">Avís legal</a>
         </span>
     </section>
+
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <script src="main.js"></script>
 </body>
 
