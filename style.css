@@ -2,6 +2,8 @@
     --distance-s: 12px;
     --distance-m: 25px;
     --distance-l: 50px;
+    --distance-xl: 100px;
+    --distance-xxl: 150px;
     --header-height: 106px;
 }
 
@@ -132,12 +134,12 @@ body.open, body.open-project {
     box-sizing: border-box;
 }
 
-.section__header{
+.section__header {
     display: flex;
     justify-content: space-between;
 }
 
-.more-info{
+.more-info {
     background: #D8D8D8;
     padding: var(--distance-m);
     position: fixed;
@@ -149,7 +151,7 @@ body.open, body.open-project {
     overflow: scroll;
 }
 
-.more-info.open{
+.more-info.open {
     top: 136px;
     transition: all 500ms;
 }
@@ -167,7 +169,7 @@ body.open, body.open-project {
     height: auto;
 }
 
-#projecte-viewer{
+#projecte-viewer {
     position: fixed;
     display: block;
     top: 100%;
@@ -177,7 +179,8 @@ body.open, body.open-project {
     background: #fff;
     transition: all 500ms;
 }
-#projecte-viewer.open{
+
+#projecte-viewer.open {
     top: 0;
 }
 
@@ -217,10 +220,8 @@ body.open, body.open-project {
     content: ' - ';
 }
 
-.grid__item {
-    width: 100%;
-    margin-bottom: var(--distance-m);
-    display: block;
+.grid {
+    margin: 0 auto;
 }
 
 .grid__image {
@@ -240,6 +241,7 @@ body.open, body.open-project {
 
 .block {
     margin-bottom: var(--distance-m);
+    box-sizing: border-box;
 }
 
 .block.block--featured {
@@ -273,39 +275,156 @@ body.open, body.open-project {
     color: #000;
 }
 
-.projecte-viewer__title{
+.projecte-viewer__title {
     margin-bottom: var(--distance-s);
     display: block;
 }
 
-.main-carousel{
+.main-carousel {
     height: 60vh;
     margin-bottom: var(--distance-s);
     overflow: hidden;
 }
+
 .carousel-cell {
-    width: 100%; /* full width */
+    width: 100%;
+    /* full width */
     height: 100%;
     background: #fff;
     /* center images in cells with flexbox */
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .carousel-cell img{
-      display: block;
-      max-height: 100%;
-      width: 100%;
-  }
+.carousel-cell img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
-  .action-container{
-      display: flex;
-      justify-content: flex-end;
-      margin-top: var(--distance-m);
-  }
+.action-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: var(--distance-m);
+}
 
-  .action-container__link{
+.action-container__link {
     color: #4DABF7;
     text-decoration: none;
-  }
+}
+
+.grid__item {
+    margin-bottom: var(--distance-m);
+    display: block;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    body.open {
+        overflow: auto;
+    }
+    .header {
+        padding: 0;
+    }
+    .filter {
+        text-align: center;
+        margin-bottom: var(--distance-l);
+    }
+    .grid__item {
+        width: 250px;
+    }
+    /* menú */
+    .toggler-nav {
+        display: none;
+    }
+    .header__logo {
+        display: none;
+    }
+    .menu {
+        position: static;
+        background: none;
+        padding: 0;
+    }
+    .menu>.menu__item {
+        position: fixed;
+        border: 2px solid #000;
+        top: 0;
+        bottom: 0;
+        writing-mode: tb-rl;
+        transform: rotate(180deg);
+        left: 0;
+        text-align: right;
+        text-transform: uppercase;
+        font-size: 26px;
+        padding: 35px 2px;
+        background-color: #fff;
+        transition: all 500ms;
+    }
+    /*menu arxiu */
+    .active-arxius .menu>.menu__item+.menu__item {
+        left: 100%;
+        margin-left: -70px;
+    }
+    .active-arxius .menu>.menu__item+.menu__item+.menu__item {
+        left: 100%;
+        margin-left: -35px;
+    }
+    .active-arxius .section, .active-arxius .more-info {
+        padding: 50px 140px 25px 110px;
+    }
+    /*menu projectes */
+    .active-projectes .menu>.menu__item+.menu__item {
+        left: 35px;
+    }
+    .active-projectes .menu>.menu__item+.menu__item+.menu__item {
+        left: 100%;
+        margin-left: -35px;
+    }
+    .active-projectes .section, .active-projectes .more-info {
+        padding: 50px 100px 25px 140px;
+    }
+    /*menu rau*/
+    .active-rau .menu>.menu__item+.menu__item {
+        left: 35px;
+    }
+    .active-rau .menu>.menu__item+.menu__item+.menu__item {
+        left: 70px;
+        margin-left: 0;
+    }
+    .active-rau .section {
+        padding: var(--distance-l) var(--distance-xl) var(--distance-m) var(--distance-xxl);
+    }
+    /* ------- */
+    .menu__sub-menu {
+        position: fixed;
+        right: 8px;
+        bottom: 8px;
+        top: auto;
+    }
+    .menu__sub-menu .menu__item+.menu__item::before {
+        content: '';
+    }
+    .menu__sub-menu .menu__item {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: var(--distance-s);
+    }
+    .block--main {
+        display: inline-block;
+        width: 60%;
+        vertical-align: top;
+        padding-right: var(--distance-l);
+        max-width: 710px;
+    }
+    .block--secundary {
+        display: inline-block;
+        width: 38%;
+        vertical-align: top;
+    }
+    .block__property--featured {
+        display: inline-block;
+        margin-right: var(--distance-m);
+    }
+}

@@ -27,13 +27,13 @@
     <header class="header">
         <img src="assets/logo.png" class="header__logo" alt="logo rau" />
         <nav class="menu">
-            <a href="#" class="menu__item navigation" data-navigation="projectes" title="Projectes">Projectes</a>
             <a href="#" class="menu__item navigation" data-navigation="arxius" title="Arxiu">Arxiu</a>
+            <a href="#" class="menu__item navigation" data-navigation="projectes" title="Projectes">Projectes</a>
             <a href="#" class="menu__item navigation" data-navigation="rau" title="Rau">Rau</a>
             <div class="menu__sub-menu">
-                <a href="/ca" class="menu__item" title="Català">cat</a>
-                <a href="/es" class="menu__item" title="Español">cast</a>
-                <a href="/en" class="menu__item" title="English">en</a>
+                <a href="/ca" class="menu__item" title="Català">CA</a>
+                <a href="/es" class="menu__item" title="Español">ES</a>
+                <a href="/en" class="menu__item" title="English">EN</a>
             </div>
         </nav>
         <a href="#" id="toggle-nav" class="toggler-nav">
@@ -72,26 +72,11 @@
         <div class="action-container">
             <a href="#" id="close-see-more-project" class="link">Tancar</a>
         </div>
-        <p class="more-info__block">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam felis quis felis imperdiet, quis
-            venenatis nisi varius. Praesent cursus nisi lectus, tincidunt dapibus augue dictum et. Phasellus ut ante
-            hendrerit, tincidunt quam in, interdum sem. Praesent malesuada non tortor sed gravida. Nam hendrerit
-            dignissim nibh, in ultricies libero ullamcorper at. Mauris auctor odio eu sodales laoreet. Nullam purus
-            odio, commodo non lorem eu, vulputate tincidunt odio. Nam vel varius orci, sit amet euismod ante. Orci
-            varius natoque penatibus
-            hendrerit, tincidunt quam in, interdum sem. Praesent malesuada non tortor sed gravida. Nam hendrerit
-            dignissim nibh, in ultricies libero ullamcorper at. Mauris auctor odio eu sodales laoreet. Nullam purus
-            odio, commodo non lorem eu, vulputate tincidunt odio. Nam vel varius orci, sit amet euismod ante. Orci
-            varius natoque penatibus hendrerit, tincidunt quam in, interdum sem. Praesent malesuada non tortor sed
-            gravida. Nam hendrerit
-            dignissim nibh, in ultricies libero ullamcorper at. Mauris auctor odio eu sodales laoreet. Nullam purus
-            odio, commodo non lorem eu, vulputate tincidunt odio. Nam vel varius orci, sit amet euismod ante. Orci
-            varius natoque penatibus
+        <p id="projecte-descripcio" class="more-info__block">
+            Loading...
         </p>
-        <p class="more-info__block">
-            Localització: Torrefarrera<br />
-            Situació: <br />
-            Adreça: c/Alzinar 19
+        <p id="projecte-mesinfo" class="more-info__block">
+            Loading...
         </p>
     </section>
     <section id="arxius" class="section">
@@ -100,7 +85,7 @@
         </div>
     </section>
     <section id="rau" class="section">
-        <div class="block">
+        <div class="block block--main">
             <span class="block__title">Filosofia</span>
             <p class="block__description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam felis quis felis imperdiet, quis
@@ -115,7 +100,7 @@
                 Praesent nec suscipit sapien.
             </p>
         </div>
-        <div class="block">
+        <div class="block block--secundary">
             <span class="block__title">Equip</span>
             <div class="block__element">
                 <span class="block__property">Persona equip 1</span>

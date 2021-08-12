@@ -6,9 +6,19 @@ const filters = {};
 const SECTION = {
     HOME: "home",
     PROJECTES: "projectes",
-    PROJECTE_VIEWER: "projecte-viewer"
+    PROJECTE_VIEWER: "projecte-viewer",
+    RAU: "rau"
 };
-let activeNavigation = SECTION.PROJECTES;
+
+const ISOTOPE_OPTIONS = {
+    // options
+    masonry: {
+        gutter: 25,
+        fitWidth: true
+    }
+};
+
+let activeNavigation = SECTION.HOME;
 
 function init() {
     initFirstSection();
@@ -107,6 +117,10 @@ function slugify(text) {
         .replace(/--+/g, '-');
 }
 
+function nl2br(str) {
+    return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+}
+
 
 function readTextFile(file, callback) {
     const rawFile = new XMLHttpRequest();
@@ -130,7 +144,7 @@ function initData(data) {
     data.forEach(element => {
         if (validateProjecte(element)) {
             displayArxiu(element, templateArxiu, templateArxiuContainer);
-            displayProjecte(element, templateProjecte, templateProjecteContainer);
+            displayProjecteThumb(element, templateProjecte, templateProjecteContainer);
         }
     });
 
@@ -139,14 +153,7 @@ function initData(data) {
 
 
     imagesLoaded(templateProjecteContainer, function () {
-        iso = new Isotope(elem, {
-            // options
-            itemSelector: '.grid__item',
-            layoutMode: 'masonry',
-            percentPosition: true,
-            gutter: 25
-        });
-
+        iso = new Isotope(elem, ISOTOPE_OPTIONS);
     });
 
 
@@ -163,6 +170,14 @@ function validateProjecte(element) {
     }
     if (!element.nom) {
         errorMessage += "El nom és obligatòri\n";
+        isValid = false;
+    }
+    if (!element.descripcio) {
+        errorMessage += "La descripció és obligatòria\n";
+        isValid = false;
+    }
+    if (!element.mesinfo) {
+        errorMessage += "El mesinfo és obligatòri\n";
         isValid = false;
     }
     if (!element.any) {
@@ -204,11 +219,11 @@ function displayArxiu(element, template, templateContainer) {
     let arxiu = template.cloneNode();
     arxiu.classList.remove("template");
     arxiu.textContent = `${element.nom} - ${element.any} / ${element.lloc}`;
-    arxiu.addEventListener('click', e => showProjecte(e, element.id));
+    arxiu.addEventListener('click', e => displayProjecte(e, element.id));
     templateContainer.appendChild(arxiu);
 };
 
-function displayProjecte(element, template, templateContainer) {
+function displayProjecteThumb(element, template, templateContainer) {
     //<img src="assets/projecte1/projecte-1.png" class="grid__image" alt="loading" />
     const projecte = template.cloneNode();
     const image = document.createElement("img");
@@ -220,27 +235,35 @@ function displayProjecte(element, template, templateContainer) {
         projecte.classList.add(slugify(classe));
         filters[slugify(classe)] = classe;
     });
-    projecte.addEventListener('click', e => showProjecte(e, element.id));
+    projecte.addEventListener('click', e => displayProjecte(e, element.id));
     templateContainer.appendChild(projecte);
 }
 
-function showProjecte(e, id) {
+function displayProjecte(e, id) {
     e.preventDefault();
     const project = findProjectById(id);
 
     initProjecteImages(project);
 
-    title = document.querySelector(".projecte-viewer__title");
-    title.textContent = project.nom;
+    let element;
 
-    title = document.querySelector(".projecte-viewer__subtitle");
-    title.textContent = `${project.lloc} / ${project.any}`;
+    element = document.querySelector(".projecte-viewer__title");
+    element.textContent = project.nom;
 
-    //navigateTo(SECTION.PROJECTE_VIEWER);
+    element = document.querySelector(".projecte-viewer__subtitle");
+    element.textContent = `${project.lloc} / ${project.any}`;
+
+    element = document.querySelector("#projecte-descripcio");
+    element.innerHTML = nl2br(project.descripcio);
+
+    element = document.querySelector("#projecte-mesinfo");
+    element.innerHTML = nl2br(project.mesinfo);
 
     showProjecteContainer();
 
 }
+
+
 
 function showProjecteContainer() {
     let container = document.querySelector('#projecte-viewer');

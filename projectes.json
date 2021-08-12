@@ -14,7 +14,9 @@
         "alt": "alt del projecte 2"
       }
     ],
-    "filtres": ["urbanisme"]
+    "filtres": ["urbanisme"],
+    "descripcio": "1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam felis quis felis imperdiet, quis venenatis nisi varius. Praesent cursus nisi lectus, tincidunt dapibus augue dictum et. Phasellus ut ante hendrerit, tincidunt",
+    "mesinfo": "1Localització: Torrefarrera<br/>Situació:\nAdreça: c/Alzinar 19"
   },
   {
     "id": "casa-feliu",
@@ -35,7 +37,9 @@
         "alt": "alt del projecte 3"
       }
     ],
-    "filtres": ["equipaments", "diseny d'interiors"]
+    "filtres": ["equipaments", "diseny d'interiors"],
+    "descripcio": "2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam felis quis felis imperdiet, quis venenatis nisi varius. Praesent cursus nisi lectus, tincidunt dapibus augue dictum et. Phasellus ut ante hendrerit, tincidunt",
+    "mesinfo": "2Localització: Torrefarrera\nSituació:\nAdreça: c/Alzinar 19"
   },
   {
     "id": "casa-esther",
@@ -60,6 +64,8 @@
         "alt": "alt del projecte 2"
       }
     ],
-    "filtres": ["equipaments", "urbanisme"]
+    "filtres": ["equipaments", "urbanisme"],
+    "descripcio": "3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam felis quis felis imperdiet, quis venenatis nisi varius. Praesent cursus nisi lectus, tincidunt dapibus augue dictum et. Phasellus ut ante hendrerit, tincidunt",
+    "mesinfo": "3Localització: Torrefarrera\nSituació:\nAdreça: c/Alzinar 19"
   }
 ]
