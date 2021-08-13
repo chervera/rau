@@ -50,6 +50,12 @@ function initActions() {
         closeMoreInfo();
         closeProjecteContainer();
     });
+
+    const initNavigation = document.querySelector('#init-navigation');
+    initNavigation.addEventListener('click', function (e) {
+        e.preventDefault();
+        navigateTo(SECTION.PROJECTES);
+    });
 }
 
 function showMoreInfo() {

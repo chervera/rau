@@ -129,9 +129,14 @@ body.open, body.open-project {
 .section {
     padding: var(--header-height) var(--distance-m) var(--distance-m) var(--distance-m);
     min-height: 100vh;
-    display: none;
+    z-index: -1;
+    opacity: 0;
     height: 100vh;
     box-sizing: border-box;
+    transition: none;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .section__header {
@@ -154,6 +159,8 @@ body.open, body.open-project {
 .more-info.open {
     top: 136px;
     transition: all 500ms;
+    opacity: 1;
+    z-index: 3;
 }
 
 .active-home .home {
@@ -162,11 +169,16 @@ body.open, body.open-project {
     align-items: center;
     justify-content: center;
     height: auto;
+    z-index: 10;
+    opacity: 1;
 }
 
 .active-projecte-viewer #projecte-viewer, .active-projectes #projectes, .active-arxius #arxius, .active-rau #rau {
     display: block;
     height: auto;
+    opacity: 1;
+    z-index: 1;
+    transition: all 500ms ease 500ms;
 }
 
 #projecte-viewer {
@@ -182,6 +194,8 @@ body.open, body.open-project {
 
 #projecte-viewer.open {
     top: 0;
+    opacity: 1;
+    z-index: 2;
 }
 
 .home__logo {
@@ -334,6 +348,11 @@ body.open, body.open-project {
     .grid__item {
         width: 250px;
     }
+    .home__title {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
     /* menú */
     .toggler-nav {
         display: none;
@@ -359,7 +378,11 @@ body.open, body.open-project {
         font-size: 26px;
         padding: 35px 2px;
         background-color: #fff;
-        transition: all 500ms;
+        transition: left 500ms;
+    }
+    /*menu home */
+    .active-home .menu {
+        display: none;
     }
     /*menu arxiu */
     .active-arxius .menu>.menu__item+.menu__item {
@@ -388,7 +411,7 @@ body.open, body.open-project {
     .active-rau .menu>.menu__item+.menu__item {
         left: 35px;
     }
-    .active-rau .menu>.menu__item+.menu__item+.menu__item {
+    .active-rau .menu>.menu__item+.menu__item+.menu__item, .active-rau .menu>.menu__sub-menu {
         left: 70px;
         margin-left: 0;
     }
@@ -398,9 +421,14 @@ body.open, body.open-project {
     /* ------- */
     .menu__sub-menu {
         position: fixed;
-        right: 8px;
+        left: 100%;
+        margin-left: -35px;
         bottom: 8px;
         top: auto;
+        display: block;
+        text-align: center;
+        width: 36px;
+        transition: all 500ms;
     }
     .menu__sub-menu .menu__item+.menu__item::before {
         content: '';
