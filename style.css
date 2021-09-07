@@ -145,7 +145,7 @@ body.open, body.open-project {
 }
 
 .more-info {
-    background: #D8D8D8;
+    background: #D98982;
     padding: var(--distance-m);
     position: fixed;
     left: 0;
@@ -347,6 +347,42 @@ body.open, body.open-project {
     }
     .grid__item {
         width: 250px;
+    }
+    .grid__item__info {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #D98982;
+        opacity: 0;
+        transition: opacity 200ms;
+    }
+    .grid__item:hover .grid__item__info {
+        opacity: 1;
+        transition: opacity 200ms;
+    }
+    .grid__item__title {
+        font-size: 22px;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        text-decoration: none;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .grid__item__moreinfo {
+        font-size: 22px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        writing-mode: tb-rl;
+        transform: rotate(180deg);
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
     }
     .home__title {
         display: block;

@@ -231,18 +231,27 @@ function displayArxiu(element, template, templateContainer) {
 
 function displayProjecteThumb(element, template, templateContainer) {
     //<img src="assets/projecte1/projecte-1.png" class="grid__image" alt="loading" />
-    const projecte = template.cloneNode();
+    const projecte = template.cloneNode(true);
     const image = document.createElement("img");
+    //clean template
+    projecte.querySelector(".grit__item__loading").remove();
+    //fill template
     image.src = element.imatges[0].url;
     image.alt = element.imatges[0].alt;
     image.classList.add("grid__image");
     projecte.appendChild(image);
+
+    projecte.querySelector(".grid__item__title").innerHTML = element.nom;
+    projecte.querySelector(".grid__item__moreinfo").innerHTML = `${element.lloc}, ${element.any}`;
+
     element.filtres.forEach(classe => {
         projecte.classList.add(slugify(classe));
         filters[slugify(classe)] = classe;
     });
     projecte.addEventListener('click', e => displayProjecte(e, element.id));
     templateContainer.appendChild(projecte);
+
+
 }
 
 function displayProjecte(e, id) {
