@@ -62,28 +62,41 @@
         </div>
     </section>
     <section id="projecte-viewer" class="section">
-        <div class="section__header">
-            <span class="projecte-viewer__title">Loading</span>
-            <a href="#" id="close-project-viewer" class="link">Tancar</a>
-        </div>
-        <div id="projecte-carousel" class="main-carousel">
-            Loading...
-        </div>
-        <span class="projecte-viewer__subtitle">Loading</span>
-        <div class="action-container">
-            <a href="#" id="see-more-project" class="action-container__link">Llegir més</a>
+        <div class="projecte-wrapper">
+            <div class="section__header">
+                <span class="projecte-viewer__title">Loading</span>
+                <a href="#" id="close-project-viewer" class="link link--close">Tancar</a>
+            </div>
+            <div class="projecte-carousel-wrapper">
+                <div id="projecte-carousel" class="main-carousel">
+                    Loading...
+                </div>
+                <div class="projecte-actions">
+                    <a href="#" id="previous-image"
+                        class="projecte-actions__action projecte-actions__action--previous">Prev</a>
+                    <a href="#" id="next-image" class="projecte-actions__action projecte-actions__action--next">Next</a>
+                </div>
+            </div>
+
+            <div class="action-container action-container--centered">
+                <span class="projecte-viewer__subtitle">Loading</span>
+                <a href="#" id="see-more-project" class="action-container__link">Llegir més</a>
+            </div>
         </div>
     </section>
     <section id="projecte-mas-info" class="more-info">
         <div class="action-container">
-            <a href="#" id="close-see-more-project" class="link">Tancar</a>
+            <a href="#" id="close-see-more-project" class="link link--close">Tancar</a>
         </div>
-        <p id="projecte-descripcio" class="more-info__block">
-            Loading...
-        </p>
-        <p id="projecte-mesinfo" class="more-info__block">
-            Loading...
-        </p>
+        <div class="content-container">
+            <span id="projecte-nom" class="more-info__block more-info__block--title">Loading</span>
+            <p id="projecte-descripcio" class="more-info__block">
+                Loading...
+            </p>
+            <p id="projecte-mesinfo" class="more-info__block">
+                Loading...
+            </p>
+        </div>
     </section>
     <section id="arxius" class="section">
         <div class="item-container template-container">
@@ -135,8 +148,8 @@
             <span class="block__property block__property--featured">(+34) 973 24 44 57</span>
             <span class="block__property block__property--featured">
                 <a href="#" target="_blank" class="link link--instagram">instagram</a>
-                <a href="#" target="_blank" class="link link--facebook">facebook</a>
-                <a href="#" target="_blank" class="link link--twitter">twitter</a>
+                <!--<a href="#" target="_blank" class="link link--facebook">facebook</a>
+                <a href="#" target="_blank" class="link link--twitter">twitter</a>-->
             </span>
         </div>
         <span class="block__property block__property--featured">

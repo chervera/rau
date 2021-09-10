@@ -56,6 +56,8 @@ function initActions() {
         e.preventDefault();
         navigateTo(SECTION.PROJECTES);
     });
+
+
 }
 
 function showMoreInfo() {
@@ -268,6 +270,9 @@ function displayProjecte(e, id) {
     element = document.querySelector(".projecte-viewer__subtitle");
     element.textContent = `${project.lloc} / ${project.any}`;
 
+    element = document.querySelector("#projecte-nom");
+    element.innerHTML = nl2br(project.nom);
+
     element = document.querySelector("#projecte-descripcio");
     element.innerHTML = nl2br(project.descripcio);
 
@@ -322,7 +327,20 @@ function initProjecteImages(project) {
             lazyLoad: 1,
             imagesLoaded: true,
             pageDots: false,
-            fade: true
+            fade: true,
+            adaptiveHeight: true
+        });
+
+        const prevImage = document.querySelector('#previous-image');
+        prevImage.addEventListener('click', function (e) {
+            e.preventDefault();
+            flkty.previous();
+        });
+
+        const nextImage = document.querySelector('#next-image');
+        nextImage.addEventListener('click', function (e) {
+            e.preventDefault();
+            flkty.next();
         });
     });
 }
