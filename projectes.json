@@ -193,5 +193,48 @@
     "filtres": ["equipaments"],
     "descripcio": "El complex residencial per a gent gran BetulaAlba d’unes vistes privilegiades situant-se en el monticle XX de les afores de la població d’Almacelles, el conjunt ofereix una atenció sociosanitària als seus residents en funció del seu grau de dependència i a la vegada existeix una clara intenció de trencar amb la idea tradicional d’un espai residencial. Conceptualment, l’ordenació arquitectònica dels volums es dóna per un eix vertebrador al qual hi punxen perpendicularment unes caixes aparentment desplaçades en la retícula que sustenta els cossos. A raó d’establir un criteri per a les circulacions, en la planta soterrani s’hi troben els serveis de suport i l’aparcament. \n Trobem que hi ha una distinció dels usos per nivells, la planta baixa s’obra al públic amb espais que complementen el programa de les plantes superiors, les quals tenen un ús més privat i íntim pels usuaris i usaries. \nDes de la lectura de l’alçat lateral, volumètricament les plantes superiors queden suspeses sobre un sòcol transparent que connecta l’exterior amb les activitats més públiques. Per emfatitzar aquesta idea es situen tots els nuclis i compartiments d’envans desfasats concèntricament de la línia de façana pel que, des de l’interior tot el perímetre vidrat queda exempt, mentre que des de l’exterior s’ofereix una lectura de conjunt en què la planta  baixa consolida els 3 cossos superiors, a la vegada que dialoga amb la làmina d’aigua i invita al verd que l’envolta a formar part de l’interior. L’aproximació frontal, en contraposició a l’aproximació lateral de l’edifici, es percep com a volums sòlids independents però units per l’eix connector vitri.\nEl raonament de la distribució dels habitacles rau segons el grau de dependència dels residents, així com la justificació del disseny de les habitacions. Com a normal general es determina que l’activitat dia i/o nit s’obra a façana i els nuclis humits queden en l’interior. \nEl joc de volums, voladissos, modulació de la materialitat són una resposta racional al programa tot i que a la vegada pren protagonisme l’explosió de la caixa.",
     "mesinfo": "Localització: Almacelles\nArquitecte:RAU\nArquitectes: C. Fortuny Farrus i Jaume Terés Armillas\nArquitecte Tècnic: Josep Torres Massot\nEnginyer Tècnic: Guillermo Redondo\nEstructurista: Sala Consultors S.L.\nSuperfície: 10.623 m2\nSituació: Partida la Creu"
+  },
+  {
+    "id": "eucaliptus",
+    "nom": "Eucaliptus",
+    "any": "2020",
+    "lloc": "Lleida",
+    "imatges": [
+      {
+        "url": "assets/eucaliptus/portada.jpg",
+        "alt": "eucaliptus"
+      },
+      {
+        "url": "assets/eucaliptus/1.jpg",
+        "alt": "eucaliptus"
+      },
+      {
+        "url": "assets/eucaliptus/2.jpg",
+        "alt": "eucaliptus"
+      },
+      {
+        "url": "assets/eucaliptus/3.jpg",
+        "alt": "eucaliptus"
+      },
+      {
+        "url": "assets/eucaliptus/4.jpg",
+        "alt": "eucaliptus"
+      },
+      {
+        "url": "assets/eucaliptus/5.jpg",
+        "alt": "eucaliptus"
+      }
+    ],
+    "filtres": ["habitatge"],
+    "descripcio": "L’habitatge es situa en una parcel·la rectangular de la “Ciutat Jardí” de Lleida, s’encabeix en una zona en què la tipologia urbanística permesa respon a un habitatge unifamiliar en filera. La disposició de les façanes segueixen l’ortogonalitat respecte les mitgeres, així com l’alçat del carrer es tanca en si mateix, la cara posterior s’obra a la zona lliure d’ús privatiu. Es concep com un volum compacte intrínsec amb línies modestes i plans purs que juguen amb les obertures donant resposta a l’ús interior.\nLa planta es projecta a la que una falsa catedral asimètrica que ha perdut una nau lateral, per tant, el cos central es separa del contigu per una franja d’emmagatzematge que recorre de punta a punta l’habitatge, la qual a la vegada amaga l’estructura de pilars. Si en secció l’activitat s’organitza en nivells; planta soterrani, zona de dia i zona de nit, en planta; la nau central esguerrada es nodreix del marge dret on s’hi situen els nuclis humits i circulacions per canviar de pis. La zona de les habitacions s’organitza entorn un pati interior, recolzat en la mitgera esquerra, esdevé la caixa de llum, generadora de visuals a la vegada que disposa de privacitat, volum que cau lleugerament a pes sobre la zona inferior on hi ha el menjador, interrelacions provocades que generen la cohesió de l’habitatge.",
+    "mesinfo": {
+      "client": "Monica Barba Caballero i Juan Gonzalez Urbano",
+      "arquitecte": "RAU",
+      "col·laboradors": "Jordi Solani Subirada - Arquitecte tècnic -",
+      "superfície": "292 m2",
+      "fotografia": "RAU",
+      "situació": "Carrer Eucaliptus, núm 23",
+      "any": "2018 - 2020"
+    }
   }
 ]

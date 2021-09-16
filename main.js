@@ -292,10 +292,22 @@ function displayProjecte(e, id) {
     element.innerHTML = nl2br(project.descripcio);
 
     element = document.querySelector("#projecte-mesinfo");
-    element.innerHTML = nl2br(project.mesinfo);
+    element.innerHTML = generateMesInfo(project.mesinfo);
 
     showProjecteContainer();
 
+}
+
+function generateMesInfo(mesInfo) {
+    if (typeof mesInfo === 'string') {
+        return nl2br(mesInfo);
+    } else {
+        let moreInfo = '';
+        for (var [key, value] of Object.entries(mesInfo)) {
+            moreInfo += `<strong>${key}</strong>: ${value}<br/>`;
+        }
+        return moreInfo;
+    }
 }
 
 

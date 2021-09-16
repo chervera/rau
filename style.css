@@ -547,6 +547,9 @@ body.open, body.open-project {
         flex: 3;
         padding: 0 var(--distance-m);
     }
+    .more-info__block strong {
+        text-transform: capitalize;
+    }
     .more-info__block--title {
         font-weight: 600;
         text-transform: uppercase;
