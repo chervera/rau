@@ -57,6 +57,17 @@ function initActions() {
         navigateTo(SECTION.PROJECTES);
     });
 
+    const prevImage = document.querySelector('#previous-image');
+    prevImage.addEventListener('click', function (e) {
+        e.preventDefault();
+        flkty.previous();
+    });
+
+    const nextImage = document.querySelector('#next-image');
+    nextImage.addEventListener('click', function (e) {
+        e.preventDefault();
+        flkty.next();
+    });
 
 }
 
@@ -90,7 +101,11 @@ function navigateTo(target) {
     document.querySelector('body').classList.remove(`active-${activeNavigation}`);
     document.querySelector('body').classList.add(`active-${target}`);
     activeNavigation = target;
-    iso.arrange({ filter: "*" });
+
+    setTimeout(function () {
+        iso.arrange({ filter: "*" });
+    }, 250)
+
     scrollToInit();
 }
 
@@ -326,22 +341,12 @@ function initProjecteImages(project) {
         flkty = new Flickity('#projecte-carousel', {
             lazyLoad: 1,
             imagesLoaded: true,
-            pageDots: false,
+            pageDots: true,
             fade: true,
-            adaptiveHeight: true
+            prevNextButtons: false,
         });
 
-        const prevImage = document.querySelector('#previous-image');
-        prevImage.addEventListener('click', function (e) {
-            e.preventDefault();
-            flkty.previous();
-        });
 
-        const nextImage = document.querySelector('#next-image');
-        nextImage.addEventListener('click', function (e) {
-            e.preventDefault();
-            flkty.next();
-        });
     });
 }
 

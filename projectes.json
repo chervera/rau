@@ -67,5 +67,131 @@
     "filtres": ["equipaments", "urbanisme"],
     "descripcio": "3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam felis quis felis imperdiet, quis venenatis nisi varius. Praesent cursus nisi lectus, tincidunt dapibus augue dictum et. Phasellus ut ante hendrerit, tincidunt",
     "mesinfo": "3Localització: Torrefarrera\nSituació:\nAdreça: c/Alzinar 19"
+  },
+  {
+    "id": "aspamis",
+    "nom": "Aspamis",
+    "any": "2015",
+    "lloc": "Torrefarrera",
+    "imatges": [
+      {
+        "url": "assets/aspamis/DSC_0183-PortadaLow.jpg",
+        "alt": "aspamis"
+      },
+      {
+        "url": "assets/aspamis/DSC_0121.jpg",
+        "alt": "aspamis"
+      },
+      {
+        "url": "assets/aspamis/DSC_0125.jpg",
+        "alt": "aspamis"
+      },
+      {
+        "url": "assets/aspamis/DSC_0161.jpg",
+        "alt": "aspamis"
+      },
+      {
+        "url": "assets/aspamis/DSC_0169.jpg",
+        "alt": "aspamis"
+      },
+      {
+        "url": "assets/aspamis/DSC_0197.jpg",
+        "alt": "aspamis"
+      },
+      {
+        "url": "assets/aspamis/DSC_0205.jpg",
+        "alt": "aspamis"
+      },
+      {
+        "url": "assets/aspamis/DSC_0209.jpg",
+        "alt": "aspamis"
+      },
+      {
+        "url": "assets/aspamis/DSC_0536.jpg",
+        "alt": "aspamis"
+      },
+      {
+        "url": "assets/aspamis/DSC_0543.jpg",
+        "alt": "aspamis"
+      },
+      {
+        "url": "assets/aspamis/DSC_0546.jpg",
+        "alt": "aspamis"
+      },
+      {
+        "url": "assets/aspamis/DSC_0549.jpg",
+        "alt": "aspamis"
+      },
+      {
+        "url": "assets/aspamis/P1010010.jpg",
+        "alt": "aspamis"
+      },
+      {
+        "url": "assets/aspamis/P1010012.jpg",
+        "alt": "aspamis"
+      }
+    ],
+    "filtres": ["equipaments"],
+    "descripcio": "El Centre d’Acolliment Residencial per a persones amb discapacitat s’organitza en un volum lineal el qual s’annexa a les preexistències del lloc per mitja d’un cos ròtula. El nou edifici articula els espais lliures que envolten l’actual Centre buscant un encaix mediambiental mínim i unitari del conjunt amb les preexistències.\n El programa funcional es distribueix en dues plantes, per una banda trobem la planta baixa, la qual esdevé semisoterrada respecte a la cota del terreny, i en la que s’hi troben les unitats ocupacionals. La planta baixa és també el nexe d’unió entre el nou programa i el Centre Existent, en el cos ròtula s’hi troben les instal·lacions, serveis de cuina i bugaderia, els quals es beneficien de patis de grans dimensions els quals permeten l’entrada de  llum i ventilació i els que actuen com a depressors de temperatura generant una convecció façana-pati a l’hivern i pati-façana a l’estiu. A la vegada, aquests patis són utilitzats com a àrees d’esbarjo controlades. Per l’altra banda, la planta primera conté l’àrea de programa corresponen a despatxos d’atenció especialitzada i les sales polivalents. Es complementa el conjunt amb la planta d’aparcament.\nL’accés principal es dona per mitjà de la rampa adaptada que ens ajuda a superar la diferencia de nivell. Les circulacions del personal intern es jerarquitzen de manera que els moviments s’independitzen, recolzats per comunicacions verticals. La planta de les habitacions queda organitzada per un corredor central, en una costat hi trobem les unitats habitacionals i  per l’altre costat es contrau i s’expandeix per tal d’acollir el programa d’ús diürn, espais que queden sectoritzats per les caixes de serveis. L’objectiu ha estat aconseguir les condicions de confort dels habitatges i del conjunt, emprant sistemes passius de control ambiental que han de permetre disminuir la demanda energètica, i aconseguir un consum energètic més racional. \n La demanda normativa de l’austeritat dels acabats materials impulsa que l’edifici miri cap a l’exterior, connectant en secció amb el lloc i arrelant-se amb les preexistències. El cos es comunica amb l’entorn immediat afavorint unes visuals controlades i intencionades cap a catifa vegetal.",
+    "mesinfo": "Localització: Torrefarrera\nArquitecte:RAU + Jaume Terés Armillas\nArquitecte Tècnic: Guillermo Redondo"
+  },
+  {
+    "id": "venso",
+    "nom": "Venso",
+    "any": "2007",
+    "lloc": "Almacelles",
+    "imatges": [
+      {
+        "url": "assets/venso/P1020397-portada.jpg",
+        "alt": "venso"
+      },
+      {
+        "url": "assets/venso/P1020367.jpg",
+        "alt": "venso"
+      },
+      {
+        "url": "assets/venso/P1020368.jpg",
+        "alt": "venso"
+      },
+      {
+        "url": "assets/venso/P1020379.jpg",
+        "alt": "venso"
+      },
+      {
+        "url": "assets/venso/P1020380.jpg",
+        "alt": "venso"
+      },
+      {
+        "url": "assets/venso/P1020381.jpg",
+        "alt": "venso"
+      },
+      {
+        "url": "assets/venso/P1020384.jpg",
+        "alt": "venso"
+      },
+      {
+        "url": "assets/venso/P1020385.jpg",
+        "alt": "venso"
+      },
+      {
+        "url": "assets/venso/P1020387.jpg",
+        "alt": "venso"
+      },
+      {
+        "url": "assets/venso/P1020388.jpg",
+        "alt": "venso"
+      },
+      {
+        "url": "assets/venso/P1020392.jpg",
+        "alt": "venso"
+      },
+      {
+        "url": "assets/venso/P1020404.jpg",
+        "alt": "venso"
+      }
+    ],
+    "filtres": ["equipaments"],
+    "descripcio": "El complex residencial per a gent gran BetulaAlba d’unes vistes privilegiades situant-se en el monticle XX de les afores de la població d’Almacelles, el conjunt ofereix una atenció sociosanitària als seus residents en funció del seu grau de dependència i a la vegada existeix una clara intenció de trencar amb la idea tradicional d’un espai residencial. Conceptualment, l’ordenació arquitectònica dels volums es dóna per un eix vertebrador al qual hi punxen perpendicularment unes caixes aparentment desplaçades en la retícula que sustenta els cossos. A raó d’establir un criteri per a les circulacions, en la planta soterrani s’hi troben els serveis de suport i l’aparcament. \n Trobem que hi ha una distinció dels usos per nivells, la planta baixa s’obra al públic amb espais que complementen el programa de les plantes superiors, les quals tenen un ús més privat i íntim pels usuaris i usaries. \nDes de la lectura de l’alçat lateral, volumètricament les plantes superiors queden suspeses sobre un sòcol transparent que connecta l’exterior amb les activitats més públiques. Per emfatitzar aquesta idea es situen tots els nuclis i compartiments d’envans desfasats concèntricament de la línia de façana pel que, des de l’interior tot el perímetre vidrat queda exempt, mentre que des de l’exterior s’ofereix una lectura de conjunt en què la planta  baixa consolida els 3 cossos superiors, a la vegada que dialoga amb la làmina d’aigua i invita al verd que l’envolta a formar part de l’interior. L’aproximació frontal, en contraposició a l’aproximació lateral de l’edifici, es percep com a volums sòlids independents però units per l’eix connector vitri.\nEl raonament de la distribució dels habitacles rau segons el grau de dependència dels residents, així com la justificació del disseny de les habitacions. Com a normal general es determina que l’activitat dia i/o nit s’obra a façana i els nuclis humits queden en l’interior. \nEl joc de volums, voladissos, modulació de la materialitat són una resposta racional al programa tot i que a la vegada pren protagonisme l’explosió de la caixa.",
+    "mesinfo": "Localització: Almacelles\nArquitecte:RAU\nArquitectes: C. Fortuny Farrus i Jaume Terés Armillas\nArquitecte Tècnic: Josep Torres Massot\nEnginyer Tècnic: Guillermo Redondo\nEstructurista: Sala Consultors S.L.\nSuperfície: 10.623 m2\nSituació: Partida la Creu"
   }
 ]
