@@ -51,11 +51,15 @@ function initActions() {
         closeProjecteContainer();
     });
 
-    const initNavigation = document.querySelector('#init-navigation');
-    initNavigation.addEventListener('click', function (e) {
+    const goToProjects = function (e) {
         e.preventDefault();
         navigateTo(SECTION.PROJECTES);
-    });
+    }
+
+    const initNavigation = document.querySelector('#init-navigation');
+    initNavigation.addEventListener('click', goToProjects);
+    const scrollDownButton = document.querySelector('#link-down');
+    scrollDownButton.addEventListener('click', goToProjects);
 
     const prevImage = document.querySelector('#previous-image');
     prevImage.addEventListener('click', function (e) {
@@ -241,7 +245,7 @@ function displayArxiu(element, template, templateContainer) {
 
     let arxiu = template.cloneNode();
     arxiu.classList.remove("template");
-    arxiu.textContent = `${element.nom} - ${element.any} / ${element.lloc}`;
+    arxiu.textContent = `${element.nom} - ${element.lloc}, ${element.any}`;
     arxiu.addEventListener('click', e => displayProjecte(e, element.id));
     templateContainer.appendChild(arxiu);
 };

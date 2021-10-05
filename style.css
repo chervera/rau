@@ -53,6 +53,7 @@ body.open, body.open-project {
     color: #000;
     text-decoration: none;
     display: block;
+    text-transform: uppercase;
 }
 
 .menu__sub-menu {
@@ -85,8 +86,8 @@ body.open, body.open-project {
 .toggler-nav__message, .toggler-nav::before, .toggler-nav::after {
     text-indent: -9999px;
     display: block;
-    background: #979797;
-    height: 6px;
+    background: #333;
+    height: 4px;
     border-radius: 5px;
     content: ' ';
     width: 100%;
@@ -96,7 +97,7 @@ body.open, body.open-project {
 
 .toggler-nav__message {
     top: 50%;
-    margin-top: -3px;
+    margin-top: -2px;
 }
 
 .toggler-nav::before {
@@ -141,8 +142,15 @@ body.open, body.open-project {
 }
 
 .section__header {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section__header .link--close {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .more-info {
@@ -187,6 +195,7 @@ body.open, body.open-project {
     visibility: visible;
     z-index: 1;
     transition: all 200ms;
+    transition-delay: 400ms;
 }
 
 #projecte-viewer {
@@ -210,12 +219,53 @@ body.open, body.open-project {
     width: 180px;
 }
 
+.link--down {
+    text-indent: -999999px;
+    height: 35px;
+    width: 50px;
+    position: relative;
+    display: block;
+}
+
+.link--down::after, .link--down::before {
+    content: ' ';
+    border: 1px solid #333;
+    background: #333;
+    border-radius: 3px;
+    width: 50%;
+    display: block;
+    height: 1px;
+    position: absolute;
+}
+
+.link--down::after {
+    transform: rotate(45deg);
+    top: 15px;
+    left: 3px;
+}
+
+.link--down::before {
+    transform: rotate(-45deg);
+    top: 15px;
+    left: 21px;
+}
+
+.home__link {
+    position: absolute;
+    bottom: 35px;
+    margin-left: -25px;
+    left: 50%;
+}
+
 .active-home .header__logo {
     display: none;
 }
 
 .home__title {
-    display: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    font-weight: 100;
 }
 
 .filter {
@@ -223,6 +273,7 @@ body.open, body.open-project {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
+    touch-action: pan-x;
     margin-right: -15px;
     margin-bottom: var(--distance-m);
     padding-right: var(--distance-m);
@@ -432,8 +483,9 @@ body.open, body.open-project {
     }
     .home__title {
         display: block;
-        text-transform: uppercase;
-        font-weight: 300;
+        font-size: 20px;
+        margin-top: 35px;
+        font-weight: 400;
     }
     /* menú */
     .toggler-nav {
@@ -456,7 +508,6 @@ body.open, body.open-project {
         transform: rotate(180deg);
         left: 0;
         text-align: right;
-        text-transform: uppercase;
         font-size: 26px;
         padding: 35px 2px;
         background-color: #fff;
@@ -537,6 +588,18 @@ body.open, body.open-project {
         display: inline-block;
         margin-right: var(--distance-m);
     }
+    .block.block--footer {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        padding-left: 100px;
+    }
+    .block.block--footer .block__property {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
     .content-container {
         display: flex;
         flex-flow: row nowrap;
@@ -561,6 +624,9 @@ body.open, body.open-project {
         position: relative;
     }
     .flickity-button {
+        display: none;
+    }
+    .flickity-page-dots {
         display: none;
     }
     .projecte-actions {
