@@ -286,10 +286,7 @@
         "alt": "Ramon Iglesias"
       }
     ],
-    "filtres": ["habitatge"],
-    "filtres": ["urbanisme"],
-    "filtres": ["rehabilitacio"],
-    "filtres": ["urbanisme"],
+    "filtres": ["habitatge", "urbanisme"],
     "descripcio": "La construcció es situa en una parcel·la ortogonal del barri de La Bordeta de Lleida, s’encabeix en una zona en què la tipologia urbanística permesa respon a un habitatge unifamiliar aïllat. En la façana a carrer es distingeix clarament la conjunció de dos volums, la part inferior més opaca i el nivell superior més transparent, les façanes restants s’orienten intencionadament cap a l’espai exterior d’ús privatiu, el qual en certa manera s’encarrega de d’organitzar la disposició de les diferents estances de l’habitatge.\n\nLa planta baixa es subdivideix en quadrants, dels quals tres són plens i el restant és l’espai exterior privat. La zona de dia es situa en el quadrant posterior dret en cohesió amb el seu quadrant en diagonal on s’hi troba una estança d’ús independent, ambdós porcions emparen l’espai lliure exterior, i el tercer ple es destina al magatzem. Per complementar el programa de la residència, només els dos quadrants frontals s’extrueixen donant lloc a la planta superior, on hi ha la zona de nit. La pastilla superior s’ordena per un corredor frontal que a una banda serveix a les habitacions i a l’altra s’entrega a l’exterior. Anàlogament, les habitacions es reclouen cap a l’espai lliure, un espai no construït amb la capacitat d’ordenar i estructurar el ple, el qual amb la pèrgola pretén estendre els límits de la caixa desplegant les geometries cap a fora, concebin un espai exterior-interior. ",
     "mesinfo": {
       "localització": "Lleida",
@@ -347,7 +344,7 @@
         "alt": "Camps Elisis"
       }
     ],
-    "filtres": ["habitatge"],
+    "filtres": ["habitatge", "rehabilitacio"],
     "descripcio": "El complex d’habitatges s’implanta en una parcel·la de geometria irregular i consta de dos volums, els quals s’estenen al llarg dels vials longitudinals, del Carrer President Josep Tarradellas i el Camí de Granyena, cada un dels edificis adopta una geometria, secció i volumetria diferent segons el vial sobre al que s’emplaça. El bloc que s’encara a la banda del riu es compon de 4 mòduls els quals es distribueixen en PB + 2PP, en canvi, l’altra pastilla d’habitatges compta amb 5 mòduls de PB + 5PP,  ambdós dotat d’aparcament en el soterrani. La resta de parcel·la, o pati interior d’illa, és un espai lliure privat amb zones verdes i dotacions d’entreteniment i esbarjo, jocs infantils  i piscina.\n\nEl conjunt compta amb 151 unitats, per una banda, el Bloc Riu consisteix en un joc de volums en regressió, que dialoguen entre ells formalment a través de la materialitat, per l’altra banda, el Bloc del C. President Josep Tarradellas ofereix una façana més regular, horitzontalitat de la qual es veu interrompuda per les franges verticals dels nuclis de circulació atorgant al conjunt una lectura rítmica i regular, i a la vegada la pell de l’edifici també abraça les cantonades, afavorint-ne les visuals des de l’interior. Tots dos blocs queden unificats per un sòcol que dona uniformitat a tot el conjunt, que es reforça per la materialitat emprada. ",
     "mesinfo": {
       "localització": "Lleida",
