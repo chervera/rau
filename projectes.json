@@ -1,74 +1,5 @@
 [
   {
-    "id": "casa-armengol",
-    "nom": "Casa Armengol",
-    "any": "2018",
-    "lloc": "Lleida",
-    "imatges": [
-      {
-        "url": "assets/projecte1/projecte-1.png",
-        "alt": "alt del projecte 1"
-      },
-      {
-        "url": "assets/projecte1/projecte-2.png",
-        "alt": "alt del projecte 2"
-      }
-    ],
-    "filtres": ["urbanisme"],
-    "descripcio": "1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam felis quis felis imperdiet, quis venenatis nisi varius. Praesent cursus nisi lectus, tincidunt dapibus augue dictum et. Phasellus ut ante hendrerit, tincidunt",
-    "mesinfo": "1Localització: Torrefarrera<br/>Situació:\nAdreça: c/Alzinar 19"
-  },
-  {
-    "id": "casa-feliu",
-    "nom": "Casa Feliu",
-    "any": "2017",
-    "lloc": "Barcelona",
-    "imatges": [
-      {
-        "url": "assets/projecte2/projecte-1.png",
-        "alt": "alt del projecte 1"
-      },
-      {
-        "url": "assets/projecte2/projecte-2.png",
-        "alt": "alt del projecte 2"
-      },
-      {
-        "url": "assets/projecte2/projecte-3.png",
-        "alt": "alt del projecte 3"
-      }
-    ],
-    "filtres": ["equipaments", "disseny d'interiors"],
-    "descripcio": "2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam felis quis felis imperdiet, quis venenatis nisi varius. Praesent cursus nisi lectus, tincidunt dapibus augue dictum et. Phasellus ut ante hendrerit, tincidunt",
-    "mesinfo": "2Localització: Torrefarrera\nSituació:\nAdreça: c/Alzinar 19"
-  },
-  {
-    "id": "casa-esther",
-    "nom": "Casa Esther",
-    "any": "2019",
-    "lloc": "Sisteró",
-    "imatges": [
-      {
-        "url": "assets/projecte3/projecte-1.png",
-        "alt": "alt del projecte 1"
-      },
-      {
-        "url": "assets/projecte3/projecte-2.png",
-        "alt": "alt del projecte 2"
-      },
-      {
-        "url": "assets/projecte3/projecte-3.png",
-        "alt": "alt del projecte 2"
-      },
-      {
-        "url": "assets/projecte3/projecte-4.png",
-        "alt": "alt del projecte 2"
-      }
-    ],
-    "filtres": ["equipaments", "urbanisme"],
-    "descripcio": "3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam felis quis felis imperdiet, quis venenatis nisi varius. Praesent cursus nisi lectus, tincidunt dapibus augue dictum et. Phasellus ut ante hendrerit, tincidunt",
-    "mesinfo": "3Localització: Torrefarrera\nSituació:\nAdreça: c/Alzinar 19"
-  },
-  {
     "id": "aspamis",
     "nom": "Aspamis",
     "any": "2015",
@@ -132,9 +63,16 @@
       }
     ],
     "filtres": ["equipaments"],
-    "descripcio": "El Centre d’Acolliment Residencial per a persones amb discapacitat s’organitza en un volum lineal el qual s’annexa a les preexistències del lloc per mitja d’un cos ròtula. El nou edifici articula els espais lliures que envolten l’actual Centre buscant un encaix mediambiental mínim i unitari del conjunt amb les preexistències.\n El programa funcional es distribueix en dues plantes, per una banda trobem la planta baixa, la qual esdevé semisoterrada respecte a la cota del terreny, i en la que s’hi troben les unitats ocupacionals. La planta baixa és també el nexe d’unió entre el nou programa i el Centre Existent, en el cos ròtula s’hi troben les instal·lacions, serveis de cuina i bugaderia, els quals es beneficien de patis de grans dimensions els quals permeten l’entrada de  llum i ventilació i els que actuen com a depressors de temperatura generant una convecció façana-pati a l’hivern i pati-façana a l’estiu. A la vegada, aquests patis són utilitzats com a àrees d’esbarjo controlades. Per l’altra banda, la planta primera conté l’àrea de programa corresponen a despatxos d’atenció especialitzada i les sales polivalents. Es complementa el conjunt amb la planta d’aparcament.\nL’accés principal es dona per mitjà de la rampa adaptada que ens ajuda a superar la diferencia de nivell. Les circulacions del personal intern es jerarquitzen de manera que els moviments s’independitzen, recolzats per comunicacions verticals. La planta de les habitacions queda organitzada per un corredor central, en una costat hi trobem les unitats habitacionals i  per l’altre costat es contrau i s’expandeix per tal d’acollir el programa d’ús diürn, espais que queden sectoritzats per les caixes de serveis. L’objectiu ha estat aconseguir les condicions de confort dels habitatges i del conjunt, emprant sistemes passius de control ambiental que han de permetre disminuir la demanda energètica, i aconseguir un consum energètic més racional. \n La demanda normativa de l’austeritat dels acabats materials impulsa que l’edifici miri cap a l’exterior, connectant en secció amb el lloc i arrelant-se amb les preexistències. El cos es comunica amb l’entorn immediat afavorint unes visuals controlades i intencionades cap a catifa vegetal.",
-    "mesinfo": "Localització: Torrefarrera\nArquitecte:RAU + Jaume Terés Armillas\nArquitecte Tècnic: Guillermo Redondo"
+    "descripcio": "El Centre d’Acolliment Residencial per a persones amb discapacitat s’organitza en un volum lineal el qual s’annexa a les preexistències del lloc per mitja d’un cos ròtula. El nou edifici articula els espais lliures que envolten l’actual Centre buscant un encaix mediambiental mínim i unitari del conjunt amb les preexistències.\n\nEl programa funcional es distribueix en dues plantes, per una banda trobem la planta baixa, la qual esdevé semisoterrada respecte a la cota del terreny, i en la que s’hi troben les unitats ocupacionals. La planta baixa és també el nexe d’unió entre el nou programa i el Centre Existent, en el cos ròtula s’hi troben les instal·lacions, serveis de cuina i bugaderia, els quals es beneficien de patis de grans dimensions els quals permeten l’entrada de  llum i ventilació i els que actuen com a depressors de temperatura generant una convecció façana-pati a l’hivern i pati-façana a l’estiu. A la vegada, aquests patis són utilitzats com a àrees d’esbarjo controlades. Per l’altra banda, la planta primera conté l’àrea de programa corresponen a despatxos d’atenció especialitzada i les sales polivalents. Es complementa el conjunt amb la planta d’aparcament.\n\nL’accés principal es dona per mitjà de la rampa adaptada que ens ajuda a superar la diferencia de nivell. Les circulacions del personal intern es jerarquitzen de manera que els moviments s’independitzen, recolzats per comunicacions verticals. La planta de les habitacions queda organitzada per un corredor central, en una costat hi trobem les unitats habitacionals i  per l’altre costat es contrau i s’expandeix per tal d’acollir el programa d’ús diürn, espais que queden sectoritzats per les caixes de serveis.\n\nL’objectiu ha estat aconseguir les condicions de confort dels habitatges i del conjunt, emprant sistemes passius de control ambiental que han de permetre disminuir la demanda energètica, i aconseguir un consum energètic més racional. ",
+    "mesinfo": {
+      "localització": "Torrefarrera",
+      "client": "Aspamis",
+      "arquitecte": "RAU + Jaume Terés Armillas - Arquitectes -",
+      "col·laboradors": "Jordi Solani Subirada - Arquitecte Tècnic- Guillermo Redondo -Enginyer Tècnic- Kubic - Estructurista-"
+    }
   },
+
+
   {
     "id": "venso",
     "nom": "Venso",
@@ -191,9 +129,19 @@
       }
     ],
     "filtres": ["equipaments"],
-    "descripcio": "El complex residencial per a gent gran BetulaAlba d’unes vistes privilegiades situant-se en el monticle XX de les afores de la població d’Almacelles, el conjunt ofereix una atenció sociosanitària als seus residents en funció del seu grau de dependència i a la vegada existeix una clara intenció de trencar amb la idea tradicional d’un espai residencial. Conceptualment, l’ordenació arquitectònica dels volums es dóna per un eix vertebrador al qual hi punxen perpendicularment unes caixes aparentment desplaçades en la retícula que sustenta els cossos. A raó d’establir un criteri per a les circulacions, en la planta soterrani s’hi troben els serveis de suport i l’aparcament. \n Trobem que hi ha una distinció dels usos per nivells, la planta baixa s’obra al públic amb espais que complementen el programa de les plantes superiors, les quals tenen un ús més privat i íntim pels usuaris i usaries. \nDes de la lectura de l’alçat lateral, volumètricament les plantes superiors queden suspeses sobre un sòcol transparent que connecta l’exterior amb les activitats més públiques. Per emfatitzar aquesta idea es situen tots els nuclis i compartiments d’envans desfasats concèntricament de la línia de façana pel que, des de l’interior tot el perímetre vidrat queda exempt, mentre que des de l’exterior s’ofereix una lectura de conjunt en què la planta  baixa consolida els 3 cossos superiors, a la vegada que dialoga amb la làmina d’aigua i invita al verd que l’envolta a formar part de l’interior. L’aproximació frontal, en contraposició a l’aproximació lateral de l’edifici, es percep com a volums sòlids independents però units per l’eix connector vitri.\nEl raonament de la distribució dels habitacles rau segons el grau de dependència dels residents, així com la justificació del disseny de les habitacions. Com a normal general es determina que l’activitat dia i/o nit s’obra a façana i els nuclis humits queden en l’interior. \nEl joc de volums, voladissos, modulació de la materialitat són una resposta racional al programa tot i que a la vegada pren protagonisme l’explosió de la caixa.",
-    "mesinfo": "Localització: Almacelles\nArquitecte:RAU\nArquitectes: C. Fortuny Farrus i Jaume Terés Armillas\nArquitecte Tècnic: Josep Torres Massot\nEnginyer Tècnic: Guillermo Redondo\nEstructurista: Sala Consultors S.L.\nSuperfície: 10.623 m2\nSituació: Partida la Creu"
+    "descripcio": "El complex residencial per a gent gran BetulaAlba d’unes vistes privilegiades situant-se en el monticle XX de les afores de la població d’Almacelles, el conjunt ofereix una atenció sociosanitària als seus residents en funció del seu grau de dependència i a la vegada existeix una clara intenció de trencar amb la idea tradicional d’un espai residencial. Conceptualment, l’ordenació arquitectònica dels volums es dóna per un eix vertebrador al qual hi punxen perpendicularment unes caixes aparentment desplaçades en la retícula que sustenta els cossos. A raó d’establir un criteri per a les circulacions, en la planta soterrani s’hi troben els serveis de suport i l’aparcament.\n\nTrobem que hi ha una distinció dels usos per nivells, la planta baixa s’obra al públic amb espais que complementen el programa de les plantes superiors, les quals tenen un ús més privat i íntim pels usuaris i usaries.\n\nDes de la lectura de l’alçat lateral, volumètricament les plantes superiors queden suspeses sobre un sòcol transparent que connecta l’exterior amb les activitats més públiques. Per emfatitzar aquesta idea es situen tots els nuclis i compartiments d’envans desfasats concèntricament de la línia de façana pel que, des de l’interior tot el perímetre vidrat queda exempt, mentre que des de l’exterior s’ofereix una lectura de conjunt en què la planta  baixa consolida els 3 cossos superiors, a la vegada que dialoga amb la làmina d’aigua i invita al verd que l’envolta a formar part de l’interior. L’aproximació frontal, en contraposició a l’aproximació lateral de l’edifici, es percep com a volums sòlids independents però units per l’eix connector vitri.\n\nEl raonament de la distribució dels habitacles rau segons el grau de dependència dels residents, així com la justificació del disseny de les habitacions. Com a normal general es determina que l’activitat dia i/o nit s’obra a façana i els nuclis humits queden en l’interior. ",
+    "mesinfo": {
+      "localització": "Almacelles",
+      "client": "Venso",
+      "arquitecte": "RAU",
+      "col·laboradors": "C. Fortuny Farrus i Jaume Terés Armillas - Arquitectes - Josep Torres Massot - Arquitecte Tècnic-, Guillermo Redondo - Enginyer Tècnic-, Sala Consultors S.L. -Estructurista-",
+      "superfície": "10.623 m2",
+      "situació": "Partida La Creu",
+      "any": "2005 - 2007"
+    }
   },
+
+
   {
     "id": "eucaliptus",
     "nom": "Eucaliptus",
@@ -236,5 +184,182 @@
       "situació": "Carrer Eucaliptus, núm 23",
       "any": "2018 - 2020"
     }
+  },
+
+
+  {
+    "id": "nuria_feliu",
+    "nom": "Nuria Feliu",
+    "any": "2020",
+    "lloc": "Alguaire",
+    "imatges": [
+      {
+        "url": "assets/nuria_feliu/portada.jpg",
+        "alt": "Núria Feliu"
+      }
+    ],
+    "filtres": ["habitatge"],
+    "descripcio": "L’immoble es situa en la zona del casc antic del municipi d’Alguaire, la geometria de la finca és irregular i urbanísticament es defineix en el pretext d’habitatge unifamiliar en tester, les façanes s’alineen a vial. El programa del conjunt edificat es desenvolupa en: planta baixa, com a garatge/magatzem i en la planta primera s’encabeix el programa complert de la residència.\n\nFugint de les irregularitats preexistents s’implanten dos grans quadrats separats i lleugerament desplaçats els quals creen al seu voltant un espai intersticial en el que s’hi col·loca les diferents dependències, prescindint de la distribució de la planta per mitjà del passadís. A més, les dos geometries són les impulsores de la circulació al seu voltant generant intercanvis entre les diferents sales satèl·lits. Degut que la morfologia de la parcel·la genera programa amb la necessitat de prestacions de ventilació s’opta per projectar un prisma de llum. Un exemple d’implantar unes directrius pròpies per generar una residència funcional i singular. ",
+    "mesinfo": {
+      "localització": "Alguaire",
+      "client": "Núria Feliu Besora i Joan Batet Rovo",
+      "arquitecte": "RAU",
+      "col·laboradors": "Jordi Solani Subirada - Arquitecte tècnic-",
+      "superfície": "370 m2",
+      "fotografia": "RAU",
+      "situació": "Carrer Bassa núm: 12",
+      "any": "2017 - 2019"
+    }
+  },
+
+
+  {
+    "id": "Pere",
+    "nom": "Pere Bañeres",
+    "any": "2019",
+    "lloc": "Alguaire",
+    "imatges": [
+      {
+        "url": "assets/pere_baneres/portada.jpg",
+        "alt": "Pere Bañeres"
+      },
+      {
+        "url": "assets/pere_baneres/1.jpg",
+        "alt": "Pere Bañeres"
+      },
+      {
+        "url": "assets/pere_baneres/2.jpg",
+        "alt": "Pere Bañeres"
+      },
+      {
+        "url": "assets/pere_baneres/3.jpg",
+        "alt": "Pere Bañeres"
+      },
+      {
+        "url": "assets/pere_baneres/4.jpg",
+        "alt": "Pere Bañeres"
+      }
+    ],
+    "filtres": ["habitatge"],
+    "descripcio": "L’immoble es situa en la zona del casc antic del terme municipal d’Alguaire, urbanísticament es defineix en el pretext d’habitatge unifamiliar entre mitgeres, la geometria de la parcel·la es rectangular amb unes dimensions de 6 m. de façana i 29 m. de profunditat. El programa del conjunt edificat es desenvolupa en: planta baixa, com a garatge/magatzem i en la planta primera s’encabeix el programa complert de la residència.\n\nDonant resposta a les característiques preexistències de la finca es busquen estratègies per tal d’oxigenar les diferents estances de l’habitatge per tal que gaudeixin de condicions òptimes de ventilació i il·luminació natural, per aquest motiu s’opta per patis interiors els quals es recolzen alternativament al testers. La posició dels dos patis interiors permeten dividir la planta en tres subzones, una zona posterior on hi ha la cuina, rebost i rentador i una zona davantera amb la zona de les habitacions, peces de servei i caixa d’escales. Ambdós zones, la del davant i la del darrera aixopluguen la zona central on hi trobem el menjador, el que busca recloure’s en ell mateix, buscant la privacitat i la intimitat, però a la vegada sent el pulmó que agermana totes les estances de la casa. ",
+    "mesinfo": {
+      "localització": "Alguaire",
+      "client": "Pere Bañeres Roig i Genoveva Besora Escuer",
+      "arquitecte": "RAU",
+      "col·laboradors": "Jordi Solani Subirada - Arquitecte tècnic-",
+      "superfície": "318 m2",
+      "fotografia": "RAU",
+      "situació": "Carrer Jaume Nadal núm: 56",
+      "any": "2019 - 2020"
+    }
+  },
+
+
+  {
+    "id": "Ramon",
+    "nom": "Ramon Iglesias",
+    "any": "2020",
+    "lloc": "Lleida",
+    "imatges": [
+      {
+        "url": "assets/ramon_iglesias/portada.jpg",
+        "alt": "Ramon Iglesias"
+      },
+      {
+        "url": "assets/ramon_iglesias/1.jpg",
+        "alt": "Ramon Iglesias"
+      },
+      {
+        "url": "assets/ramon_iglesias/2.jpg",
+        "alt": "Ramon Iglesias"
+      },
+      {
+        "url": "assets/ramon_iglesias/3.jpg",
+        "alt": "Ramon Iglesias"
+      },
+      {
+        "url": "assets/ramon_iglesias/4.jpg",
+        "alt": "Ramon Iglesias"
+      },
+      {
+        "url": "assets/ramon_iglesias/5.jpg",
+        "alt": "Ramon Iglesias"
+      }
+    ],
+    "filtres": ["habitatge"],
+    "filtres": ["urbanisme"],
+    "filtres": ["rehabilitacio"],
+    "filtres": ["urbanisme"],
+    "descripcio": "La construcció es situa en una parcel·la ortogonal del barri de La Bordeta de Lleida, s’encabeix en una zona en què la tipologia urbanística permesa respon a un habitatge unifamiliar aïllat. En la façana a carrer es distingeix clarament la conjunció de dos volums, la part inferior més opaca i el nivell superior més transparent, les façanes restants s’orienten intencionadament cap a l’espai exterior d’ús privatiu, el qual en certa manera s’encarrega de d’organitzar la disposició de les diferents estances de l’habitatge.\n\nLa planta baixa es subdivideix en quadrants, dels quals tres són plens i el restant és l’espai exterior privat. La zona de dia es situa en el quadrant posterior dret en cohesió amb el seu quadrant en diagonal on s’hi troba una estança d’ús independent, ambdós porcions emparen l’espai lliure exterior, i el tercer ple es destina al magatzem. Per complementar el programa de la residència, només els dos quadrants frontals s’extrueixen donant lloc a la planta superior, on hi ha la zona de nit. La pastilla superior s’ordena per un corredor frontal que a una banda serveix a les habitacions i a l’altra s’entrega a l’exterior. Anàlogament, les habitacions es reclouen cap a l’espai lliure, un espai no construït amb la capacitat d’ordenar i estructurar el ple, el qual amb la pèrgola pretén estendre els límits de la caixa desplegant les geometries cap a fora, concebin un espai exterior-interior. ",
+    "mesinfo": {
+      "localització": "Lleida",
+      "client": "Ramón Iglesias Palau",
+      "arquitecte": "RAU",
+      "col·laboradors": "Jordi Solani Subirada - Arquitecte tècnic- i Guillermo Redondo - Enginyer Industrial-",
+      "superfície": "290 m2",
+      "fotografia": "RAU",
+      "situació": "Av. Artesa, núm: 36 ",
+      "any": "2018 - 2020"
+    }
+  },
+
+
+  {
+    "id": "Elisis",
+    "nom": "Camps Elisis",
+    "any": "2003",
+    "lloc": "Lleida",
+    "imatges": [
+      {
+        "url": "assets/camps_elisis/portada.jpg",
+        "alt": "Camps Elisis"
+      },
+      {
+        "url": "assets/camps_elisis/1.jpg",
+        "alt": "Camps Elisis"
+      },
+      {
+        "url": "assets/camps_elisis/2.jpg",
+        "alt": "Camps Elisis"
+      },
+      {
+        "url": "assets/camps_elisis/3.jpg",
+        "alt": "Camps Elisis"
+      },
+      {
+        "url": "assets/camps_elisis/4.jpg",
+        "alt": "Camps Elisis"
+      },
+      {
+        "url": "assets/camps_elisis/5.jpg",
+        "alt": "Camps Elisis"
+      },
+      {
+        "url": "assets/camps_elisis/6.jpg",
+        "alt": "Camps Elisis"
+      },
+      {
+        "url": "assets/camps_elisis/7.jpg",
+        "alt": "Camps Elisis"
+      },
+      {
+        "url": "assets/camps_elisis/8.jpg",
+        "alt": "Camps Elisis"
+      }
+    ],
+    "filtres": ["habitatge"],
+    "descripcio": "El complex d’habitatges s’implanta en una parcel·la de geometria irregular i consta de dos volums, els quals s’estenen al llarg dels vials longitudinals, del Carrer President Josep Tarradellas i el Camí de Granyena, cada un dels edificis adopta una geometria, secció i volumetria diferent segons el vial sobre al que s’emplaça. El bloc que s’encara a la banda del riu es compon de 4 mòduls els quals es distribueixen en PB + 2PP, en canvi, l’altra pastilla d’habitatges compta amb 5 mòduls de PB + 5PP,  ambdós dotat d’aparcament en el soterrani. La resta de parcel·la, o pati interior d’illa, és un espai lliure privat amb zones verdes i dotacions d’entreteniment i esbarjo, jocs infantils  i piscina.\n\nEl conjunt compta amb 151 unitats, per una banda, el Bloc Riu consisteix en un joc de volums en regressió, que dialoguen entre ells formalment a través de la materialitat, per l’altra banda, el Bloc del C. President Josep Tarradellas ofereix una façana més regular, horitzontalitat de la qual es veu interrompuda per les franges verticals dels nuclis de circulació atorgant al conjunt una lectura rítmica i regular, i a la vegada la pell de l’edifici també abraça les cantonades, afavorint-ne les visuals des de l’interior. Tots dos blocs queden unificats per un sòcol que dona uniformitat a tot el conjunt, que es reforça per la materialitat emprada. ",
+    "mesinfo": {
+      "localització": "Lleida",
+      "client": "Espais Sabadell Promocions Inmobiliaries S.A.",
+      "arquitecte": "RAU",
+      "col·laboradors": "C. Fortuny Farrus, Muñoz + Albin -Arquitectes- Albert Aldavert Ferri - Arquitecte Tècnic-",
+      "superfície": "25.941 m2",
+      "fotografia": "RAU",
+      "situació": "Av. President Tarradelles, Camps Elísis",
+      "any": "2003 - 2006",
+      "premis": "II accèssit Vesta al millor edifici d'habitatges de Lleida 2006"
+    }
   }
+
 ]
