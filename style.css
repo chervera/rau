@@ -154,6 +154,7 @@ body.open, body.open-project {
     top: 0;
     left: 0;
     right: 0;
+    overflow: hidden;
 }
 
 .section__header {
@@ -238,10 +239,10 @@ body.open, body.open-project {
     display: block;
     height: auto;
     opacity: 1;
-    visibility: visible;
     z-index: 1;
     transition: all 200ms;
     transition-delay: 400ms;
+    overflow: auto;
 }
 
 #projecte-viewer {
