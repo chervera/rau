@@ -73,6 +73,52 @@ function initActions() {
         flkty.next();
     });
 
+    const policyPrivacy = document.querySelector('#privacy-policy-shower');
+    policyPrivacy.addEventListener('click', function (e) {
+        e.preventDefault();
+        showPolicyPrivacy();
+    });
+
+    const legalAdvise = document.querySelector('#legal-advise-shower');
+    legalAdvise.addEventListener('click', function (e) {
+        e.preventDefault();
+        showLegalAdvise();
+    });
+
+    const closerPrivacyPolice = document.querySelector('#close-privacy-policy');
+    closerPrivacyPolice.addEventListener('click', function (e) {
+        e.preventDefault();
+        closePrivacyPolice();
+    });
+
+    const closerLegalAdvise = document.querySelector('#close-legal-advise');
+    closerLegalAdvise.addEventListener('click', function (e) {
+        e.preventDefault();
+        closeLegalAdvise();
+    });
+
+
+
+}
+
+function showPolicyPrivacy() {
+    const privacyPolicy = document.querySelector('#privacy-policy');
+    privacyPolicy.classList.add('open');
+}
+
+function closePrivacyPolice() {
+    const privacyPolicy = document.querySelector('#privacy-policy');
+    privacyPolicy.classList.remove('open');
+}
+
+function showLegalAdvise() {
+    const legalAdvise = document.querySelector('#legal-advise');
+    legalAdvise.classList.add('open');
+}
+
+function closeLegalAdvise() {
+    const legalAdvise = document.querySelector('#legal-advise');
+    legalAdvise.classList.remove('open');
 }
 
 function showMoreInfo() {
@@ -386,7 +432,7 @@ function createFilters() {
 
 
     const todoFilter = templateFilter.cloneNode();
-    todoFilter.textContent = "Tots";
+    todoFilter.textContent = "tots";
     todoFilter.setAttribute("data-filter", "*");
     templateFilterContainer.appendChild(todoFilter);
 
