@@ -469,6 +469,16 @@ body.open, body.open-project {
     text-decoration: none;
 }
 
+.grid__item.loading {
+    display: none;
+}
+
+#projectes-list.preloading {
+    margin-left: -300px;
+    transition: all 600ms;
+    opacity: 0;
+}
+
 .projecte-actions {
     display: none;
 }

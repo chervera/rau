@@ -14,7 +14,8 @@ const ISOTOPE_OPTIONS = {
     // options
     masonry: {
         gutter: 25,
-        fitWidth: true
+        fitWidth: true,
+        stagger: 30
     }
 };
 
@@ -154,7 +155,8 @@ function navigateTo(target) {
 
     setTimeout(function () {
         iso.arrange({ filter: "*" });
-    }, 250)
+        document.getElementById('projectes-list').classList.remove('preloading');
+    }, 750)
 
     scrollToInit();
 }
