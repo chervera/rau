@@ -1,7 +1,7 @@
 [
   {
     "id": "eucaliptus",
-    "nom": "Eucaliptus",
+    "nom": "Casa Eucaliptus",
     "any": "2020",
     "lloc": "Lleida",
     "imatges": [
@@ -44,7 +44,7 @@
   },
   {
     "id": "nuria_feliu",
-    "nom": "Nuria Feliu",
+    "nom": "Casa NF",
     "any": "2020",
     "lloc": "Alguaire",
     "imatges": [
@@ -68,7 +68,7 @@
   },
   {
     "id": "Ramon",
-    "nom": "Ramon Iglesias",
+    "nom": "Casa RI",
     "any": "2020",
     "lloc": "Lleida",
     "imatges": [
@@ -113,7 +113,7 @@
 
   {
     "id": "Pere",
-    "nom": "Pere Bañeres",
+    "nom": "Casa PB",
     "any": "2019",
     "lloc": "Alguaire",
     "imatges": [
@@ -293,7 +293,7 @@
 
   {
     "id": "Elisis",
-    "nom": "Camps Elisis",
+    "nom": "Habitatges Tarradellas",
     "any": "2003",
     "lloc": "Lleida",
     "imatges": [
