@@ -55,11 +55,11 @@ body.open, body.open-project {
     display: block;
     text-transform: uppercase;
     line-height: 3rem;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .menu__item.menu__logo {
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .menu__sub-menu .menu__item {
@@ -263,7 +263,7 @@ body.open, body.open-project {
 }
 
 .home__logo {
-    width: 220px;
+    width: 224px;
 }
 
 .link--down {
@@ -309,9 +309,9 @@ body.open, body.open-project {
 }
 
 .home__title {
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
-    margin-top: 35px;
+    margin-top: 15px;
     font-weight: 700;
 }
 
@@ -343,6 +343,11 @@ body.open, body.open-project {
     color: #000;
     text-decoration: none;
 }
+
+.filter__item:hover {
+    text-decoration: underline;
+}
+
 
 .filter__item+.filter__item::before {
     content: ' ';
@@ -383,6 +388,8 @@ body.open, body.open-project {
 
 .block__title {
     text-transform: uppercase;
+    margin-bottom: 16px;
+    display: block;
 }
 
 .block__description {
@@ -566,7 +573,7 @@ body.open, body.open-project {
         display: none;
     }
     .home__logo {
-        width: 350px;
+        width: 375px;
     }
     .menu {
         position: static;
@@ -650,6 +657,9 @@ body.open, body.open-project {
         font-size: 14px;
         font-weight: 600;
         margin-bottom: var(--distance-s);
+    }
+    .menu__sub-menu .menu__item:hover {
+        text-decoration: underline;
     }
     .block--main {
         display: inline-block;
