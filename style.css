@@ -346,6 +346,8 @@ body.open, body.open-project {
 
 .filter__item+.filter__item::before {
     content: ' ';
+    width: 18px;
+    display: inline-block;
 }
 
 .grid {
