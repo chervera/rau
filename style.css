@@ -345,7 +345,8 @@ body.open, body.open-project {
 }
 
 .filter__item:hover {
-    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
 }
 
 
@@ -373,6 +374,10 @@ body.open, body.open-project {
     font-size: 18px;
     margin-bottom: var(--distance-m);
     font-weight: 600;
+}
+.item-container__item:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
 }
 
 .block {
@@ -659,7 +664,8 @@ body.open, body.open-project {
         margin-bottom: var(--distance-s);
     }
     .menu__sub-menu .menu__item:hover {
-        text-decoration: underline;
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
     }
     .block--main {
         display: inline-block;
