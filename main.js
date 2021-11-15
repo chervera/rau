@@ -436,6 +436,7 @@ function createFilters() {
     const todoFilter = templateFilter.cloneNode();
     todoFilter.textContent = "tots";
     todoFilter.setAttribute("data-filter", "*");
+    todoFilter.classList.add('current');
     templateFilterContainer.appendChild(todoFilter);
 
     templateFilter.remove();
@@ -447,7 +448,10 @@ function activateFilters() {
         button.addEventListener('click', (e) => {
             e.preventDefault();
             const filter = button.dataset.filter;
+            const current = document.querySelector('#filters .current');
+            current.classList.remove('current');
             iso.arrange({ filter });
+            e.target.classList.add('current');
         })
     });
 }

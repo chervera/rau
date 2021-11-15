@@ -344,11 +344,14 @@ body.open, body.open-project {
     text-decoration: none;
 }
 
+.filter__item.current {
+    font-weight: 600;
+}
+
 .filter__item:hover {
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
 }
-
 
 .filter__item+.filter__item::before {
     content: ' ';
@@ -375,6 +378,7 @@ body.open, body.open-project {
     margin-bottom: var(--distance-m);
     font-weight: 600;
 }
+
 .item-container__item:hover {
     text-decoration-line: underline;
     text-decoration-thickness: 3px;
